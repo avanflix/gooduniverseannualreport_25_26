@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Good Universe  Impact Report 2025–26</title>
+<meta name="description" content="Good Universe Annual Impact Report 2025–26. Adolescent wellbeing, menstrual health, climate action, education and community health across rural India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--void:#08080A;--earth:#111009;--bark:#1C1A14;--terra:#B85835;--gold:#C8A052;--gold-pale:#E8D4A8;--sage:#2E6A48;--forest:#1B3D2A;--fern:#5A9468;--sky:#4A7896;--cream:#F3EBDF;--parch:#E6DAC8;--ash:#B8B0A0;--mid:#706860;--ink:#18140E;--white:#FAF7F2}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Jost',sans-serif;background:var(--void);color:var(--cream);overflow-x:hidden;cursor:none}
+a{text-decoration:none;color:inherit;cursor:none}
+img{max-width:100%;display:block}
+button,.btn{cursor:none}
+.grain{position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");background-size:220px;animation:gran 6s steps(8) infinite}
+@keyframes gran{0%{transform:translate(0,0)}12%{transform:translate(-6%,-8%)}25%{transform:translate(8%,5%)}37%{transform:translate(-4%,12%)}50%{transform:translate(10%,-6%)}62%{transform:translate(-8%,8%)}75%{transform:translate(4%,-12%)}87%{transform:translate(-10%,4%)}100%{transform:translate(0,0)}}
+.cur-dot{position:fixed;z-index:9999;pointer-events:none;width:6px;height:6px;border-radius:50%;background:var(--gold);margin:-3px 0 0 -3px;transition:transform .1s,opacity .2s;mix-blend-mode:difference}
+.cur-ring{position:fixed;z-index:9998;pointer-events:none;width:36px;height:36px;border-radius:50%;border:1px solid rgba(200,160,82,.45);margin:-18px 0 0 -18px;transition:transform .45s cubic-bezier(.16,1,.3,1),width .3s,height .3s,border-color .3s}
+.cur-ring.hover{width:56px;height:56px;margin:-28px 0 0 -28px;border-color:rgba(200,160,82,.8)}
+.progress-bar{position:fixed;top:0;left:0;z-index:8000;height:1.5px;background:var(--gold);width:0%;transition:width .1s}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:7000;padding:28px 56px;display:flex;align-items:center;justify-content:space-between;transition:padding .4s,background .4s}
+.nav.scrolled{padding:18px 56px;background:rgba(8,8,10,.85);backdrop-filter:blur(20px)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;letter-spacing:.06em;color:var(--cream);display:flex;align-items:center;gap:10px}
+.nav-logo-mark{width:28px;height:28px;border:1px solid rgba(200,160,82,.5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--gold);letter-spacing:0}
+.nav-links{display:flex;gap:28px}
+.nav-link{font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,235,223,.5);transition:color .2s;background:none;border:none;font-family:'Jost',sans-serif}
+.nav-link:hover{color:var(--cream)}
+.nav-cta{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(200,160,82,.4);padding:10px 22px;color:var(--gold);background:none;font-family:'Jost',sans-serif;transition:background .25s,color .25s,border-color .25s}
+.nav-cta:hover{background:var(--gold);color:var(--void);border-color:var(--gold)}
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:20px 56px 72px;position:relative;overflow:hidden;background:var(--void)}
+.hero-atmosphere{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 60% 50% at 80% 20%,rgba(46,106,72,.18) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(184,88,53,.12) 0%,transparent 60%),radial-gradient(ellipse 80% 80% at 50% 50%,rgba(27,61,42,.25) 0%,transparent 80%);animation:atmo 12s ease-in-out infinite alternate}
+@keyframes atmo{0%{opacity:.7}50%{opacity:1}100%{opacity:.6}}
+.hero-visual{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-img-placeholder{position:absolute;inset:0;background:linear-gradient(160deg,#0A1A0E 0%,#06080A 50%,#160E07 100%);display:flex;align-items:center;justify-content:center}
+.hero-img-placeholder::after{content:'Community Documentary  Field Photo';font-size:11px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(243,235,223,.07);font-family:'Jost',sans-serif}
+.hero-vignette{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(8,8,10,.95) 0%,rgba(8,8,10,.2) 40%,transparent 100%),linear-gradient(to right,rgba(8,8,10,.5) 0%,transparent 40%)}
+.hero-content{position:relative;z-index:3;max-width:1100px}
+.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:32px;overflow:hidden}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold)}
+.hero-eyebrow-inner{transform:translateY(120%);transition:transform 1s .3s cubic-bezier(.16,1,.3,1)}
+.loaded .hero-eyebrow-inner{transform:translateY(0)}
+.hero-title{margin-bottom:36px}
+.hline{overflow:hidden;display:block}
+.hline-inner{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(52px,8vw,118px);font-weight:300;line-height:.92;letter-spacing:-.02em;transform:translateY(110%);transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.hline:nth-child(1) .hline-inner{transition-delay:.1s}
+.hline:nth-child(2) .hline-inner{transition-delay:.22s}
+.hline:nth-child(3) .hline-inner{transition-delay:.34s;color:var(--gold);font-style:italic}
+.loaded .hline-inner{transform:translateY(0)}
+.hero-sub{font-size:16px;font-weight:300;color:rgba(243,235,223,.55);max-width:520px;line-height:1.75;transform:translateY(20px);opacity:0;transition:transform .9s 1.1s cubic-bezier(.16,1,.3,1),opacity .9s 1.1s}
+.loaded .hero-sub{transform:translateY(0);opacity:1}
+.hero-actions{display:flex;gap:16px;margin-top:40px;flex-wrap:wrap;transform:translateY(20px);opacity:0;transition:transform .9s 1.3s cubic-bezier(.16,1,.3,1),opacity .9s 1.3s}
+.loaded .hero-actions{transform:translateY(0);opacity:1}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--void);padding:15px 32px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:none;font-family:'Jost',sans-serif;transition:background .25s,transform .2s}
+.btn-primary:hover{background:#e0b85c;transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(243,235,223,.3);color:var(--cream);padding:15px 32px;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:none;font-family:'Jost',sans-serif;transition:border-color .25s,color .25s}
+.btn-outline:hover{border-color:var(--cream)}
+.hero-scroll{position:absolute;bottom:72px;right:56px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;transition:opacity 1s 1.8s;writing-mode:vertical-rl}
+.loaded .hero-scroll{opacity:.4}
+.hero-scroll span{font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+.hero-scroll-line{width:1px;height:48px;background:var(--gold);animation:scroll-line 2s ease-in-out infinite}
+@keyframes scroll-line{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.5)}}
+.hero-badge{position:absolute;top:80px;right:160px;z-index:3;border:1px solid rgba(200,160,82,.25);padding:12px 18px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(200,160,82,.65);display:flex;flex-direction:column;gap:3px;opacity:0;transform:translateY(-10px);transition:opacity 1s 2s,transform 1s 2s cubic-bezier(.16,1,.3,1)}
+.loaded .hero-badge{opacity:1;transform:translateY(0)}
+.hero-badge strong{font-weight:600;color:var(--gold)}
+/* THEME BAND */
+.theme-band{background:var(--terra);padding:22px 56px;display:flex;align-items:center;justify-content:space-between;gap:40px;overflow:hidden}
+.theme-band-text{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2vw,24px);font-weight:400;font-style:italic;color:var(--cream)}
+.theme-band-ticker{display:flex;gap:40px;align-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,235,223,.65);flex-shrink:0}
+.theme-band-sep{color:rgba(243,235,223,.3)}
+/* REVEAL SYSTEM */
+[data-reveal]{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s cubic-bezier(.16,1,.3,1)}
+[data-reveal].in-view{opacity:1;transform:translateY(0)}
+[data-reveal="up-1"]{transition-delay:.1s}
+[data-reveal="up-2"]{transition-delay:.2s}
+[data-reveal="up-3"]{transition-delay:.3s}
+[data-reveal="up-4"]{transition-delay:.4s}
+/* SECTION */
+section{position:relative;overflow:hidden}
+.sec-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.sec-eyebrow::before{content:'';width:24px;height:1px;background:currentColor}
+/* IMPACT */
+.impact{background:var(--cream);padding:120px 56px;color:var(--ink)}
+.impact-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:80px}
+.impact-head-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,72px);font-weight:400;line-height:1.05;letter-spacing:-.025em;color:var(--ink)}
+.impact-head-title em{font-style:italic;color:var(--terra)}
+.impact-head-desc{font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);max-width:380px}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--parch)}
+.impact-stat{padding:48px 40px;border-right:1px solid var(--parch);position:relative;overflow:hidden;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.impact-stat:hover{transform:translateY(-4px)}
+.impact-stat:last-child{border-right:none}
+.impact-stat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.impact-stat:hover::after{transform:scaleX(1)}
+.is-1::after{background:var(--terra)}.is-2::after{background:var(--sage)}.is-3::after{background:var(--gold)}.is-4::after{background:var(--sky)}
+.stat-number{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,5vw,68px);font-weight:600;font-style:italic;line-height:1;margin-bottom:14px;display:block;color:var(--ink)}
+.is-1 .stat-number{color:var(--terra)}.is-2 .stat-number{color:var(--sage)}.is-3 .stat-number{color:var(--gold)}.is-4 .stat-number{color:var(--sky)}
+.stat-label{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.stat-sub{font-size:12px;font-weight:300;color:var(--mid);line-height:1.65}
+/* YEAR IN NUMBERS */
+.year-numbers{background:var(--bark);padding:100px 56px}
+.yn-grid-big{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(243,235,223,.08);margin-top:60px}
+.yn-stat{padding:48px 40px;border-right:1px solid rgba(243,235,223,.08);border-bottom:1px solid rgba(243,235,223,.08);position:relative;overflow:hidden;transition:background .3s}
+.yn-stat:hover{background:rgba(200,160,82,.04)}
+.yn-stat:nth-child(3n){border-right:none}
+.yn-big-num{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,64px);font-weight:600;font-style:italic;color:var(--gold);line-height:1;display:block;margin-bottom:10px}
+.yn-label{font-size:14px;font-weight:500;color:var(--cream);margin-bottom:6px}
+.yn-desc{font-size:12px;font-weight:300;color:rgba(243,235,223,.4);line-height:1.65}
+.yn-accent-bar{position:absolute;bottom:0;left:0;height:2px;background:var(--terra);width:0%;transition:width .8s cubic-bezier(.16,1,.3,1)}
+.yn-stat.in-view .yn-accent-bar{width:40%}
+.yn-stat:hover .yn-accent-bar{width:100%}
+/* ABOUT */
+.about-mission{background:var(--earth);padding:120px 56px}
+.mission-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.mission-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,70px);font-weight:300;line-height:1.0;letter-spacing:-.025em;color:var(--cream);margin-bottom:32px}
+.mission-title em{font-style:italic;color:var(--gold)}
+.mission-statement{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,24px);font-weight:300;font-style:italic;line-height:1.6;color:rgba(243,235,223,.8);border-left:2px solid var(--terra);padding-left:24px;margin-bottom:32px}
+.mission-body{font-size:15px;font-weight:300;line-height:1.85;color:rgba(243,235,223,.5)}
+.mission-pillars{display:flex;flex-direction:column;gap:0;margin-top:48px}
+.mission-pillar{display:flex;align-items:flex-start;gap:20px;padding:20px 0;border-top:1px solid rgba(243,235,223,.08);transition:padding .3s}
+.mission-pillar:hover{padding-left:12px}
+.mp-num{font-family:'Cormorant Garamond',serif;font-size:13px;font-style:italic;color:var(--gold);flex-shrink:0;margin-top:2px}
+.mp-title{font-size:15px;font-weight:500;color:var(--cream);margin-bottom:4px}
+.mp-desc{font-size:13px;font-weight:300;color:rgba(243,235,223,.45);line-height:1.6}
+/* FOUNDERS NOTE */
+.founders-note{background:var(--void);padding:100px 56px}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:60px}
+.founder-card{background:rgba(255,255,255,.02);border:1px solid rgba(243,235,223,.07);padding:48px 44px;position:relative;overflow:hidden;transition:border-color .3s}
+.founder-card:hover{border-color:rgba(200,160,82,.25)}
+.founder-card::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:120px;color:rgba(200,160,82,.06);position:absolute;top:-10px;left:20px;line-height:1;user-select:none;pointer-events:none}
+.fc-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,1.8vw,22px);font-weight:400;font-style:italic;line-height:1.6;color:rgba(243,235,223,.85);margin-bottom:28px;position:relative;z-index:1}
+.fc-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--cream);margin-bottom:4px}
+.fc-role{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+/* AWP SECTION */
+.awp-section{background:var(--cream);padding:120px 56px;color:var(--ink)}
+.awp-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:80px}
+.awp-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,70px);font-weight:400;line-height:1.0;letter-spacing:-.025em;color:var(--ink)}
+.awp-title em{font-style:italic;color:var(--terra)}
+.awp-stat-block{background:var(--ink);color:var(--cream);padding:24px 28px;margin-top:28px;display:flex;flex-direction:column;gap:6px}
+.awp-stat-big{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;font-style:italic;color:var(--terra);line-height:1}
+.awp-stat-label{font-size:12px;font-weight:400;color:rgba(243,235,223,.6);letter-spacing:.04em}
+.awp-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--parch);margin-bottom:80px}
+.awp-pillar{padding:44px 32px;border-right:1px solid var(--parch);position:relative;overflow:hidden;transition:background .3s}
+.awp-pillar:hover{background:rgba(26,20,14,.03)}
+.awp-pillar:last-child{border-right:none}
+.awp-pillar::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.awp-pillar:hover::after{transform:scaleX(1)}
+.awp-p1::after{background:var(--terra)}.awp-p2::after{background:#8E6FC0}.awp-p3::after{background:var(--sage)}.awp-p4::after{background:var(--sky)}
+.awp-pillar-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:20px}
+.awp-p1 .awp-pillar-icon{background:rgba(184,88,53,.12)}
+.awp-p2 .awp-pillar-icon{background:rgba(142,111,192,.12)}
+.awp-p3 .awp-pillar-icon{background:rgba(46,106,72,.12)}
+.awp-p4 .awp-pillar-icon{background:rgba(74,120,150,.12)}
+.awp-pillar-num{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:12px}
+.awp-pillar-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.15}
+.awp-pillar-body{font-size:13px;font-weight:300;color:var(--mid);line-height:1.7}
+.awp-programs-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:400;color:var(--ink);margin-bottom:40px;letter-spacing:-.015em}
+.awp-programs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.awp-prog-card{border:1px solid var(--parch);padding:36px 36px;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.awp-prog-card:hover{border-color:var(--terra);box-shadow:0 4px 40px rgba(184,88,53,.06)}
+.awp-prog-partner{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:14px;display:block}
+.awp-prog-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:16px;line-height:1.2}
+.awp-prog-detail{font-size:13px;font-weight:300;color:var(--mid);line-height:1.7;margin-bottom:24px}
+.awp-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.awp-metric{background:rgba(26,20,14,.04);padding:14px 16px;border-left:2px solid transparent;transition:border-color .3s}
+.awp-prog-card:hover .awp-metric{border-left-color:var(--terra)}
+.awp-metric-before{font-size:11px;color:var(--mid);margin-bottom:2px}
+.awp-metric-after{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;font-style:italic;color:var(--sage);line-height:1}
+.awp-metric-label{font-size:11px;color:var(--mid);margin-top:2px}
+/* TRANSFORMATION */
+.transformation{background:var(--bark);padding:100px 56px}
+.trans-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,60px);font-weight:300;color:var(--cream);line-height:1.05;letter-spacing:-.02em;margin-bottom:16px}
+.trans-title em{font-style:italic;color:var(--gold)}
+.trans-subtitle{font-size:15px;font-weight:300;color:rgba(243,235,223,.45);margin-bottom:60px;max-width:560px;line-height:1.75}
+.trans-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid rgba(243,235,223,.08)}
+.trans-metric{padding:36px 28px;border-right:1px solid rgba(243,235,223,.08);position:relative;overflow:hidden}
+.trans-metric:last-child{border-right:none}
+.trans-before{font-size:12px;letter-spacing:.08em;color:rgba(243,235,223,.35);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.trans-before::before{content:'';width:12px;height:1px;background:rgba(243,235,223,.2)}
+.trans-num-before{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;font-style:italic;color:rgba(243,235,223,.25);line-height:1;margin-bottom:6px}
+.trans-arrow{font-size:20px;color:var(--gold);margin:8px 0}
+.trans-num-after{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:600;font-style:italic;color:var(--fern);line-height:1;margin-bottom:8px}
+.trans-topic{font-size:12px;font-weight:500;color:rgba(243,235,223,.6);line-height:1.5}
+/* WORK / THEMATIC */
+.work{background:var(--earth);padding:120px 56px}
+.work-head{margin-bottom:72px}
+.work-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,72px);font-weight:300;line-height:1.05;letter-spacing:-.02em;color:var(--cream);max-width:700px}
+.work-title em{font-style:italic;color:var(--gold)}
+.work-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid rgba(243,235,223,.08)}
+.theme-card{position:relative;overflow:hidden;aspect-ratio:3/5;border-right:1px solid rgba(243,235,223,.08);display:flex;flex-direction:column;justify-content:flex-end;padding:28px 24px;cursor:none}
+.theme-card:last-child{border-right:none}
+.theme-card-bg{position:absolute;inset:0;z-index:0;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.theme-card:hover .theme-card-bg{transform:scale(1.06)}
+.theme-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/5;
+  gap: 10px;
+  border-right: 1px solid rgba(243,235,223,.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 24px;
+  cursor: none;
+}
+
+.theme-card-img {
+  position: absolute;
+  inset: 0 0 50% 0;   /* only top half */
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  z-index: 0;
+  transition: transform .8s cubic-bezier(.16,1,.3,1);
+}
+
+.theme-card:hover .theme-card-img {
+  transform: scale(1.06);
+}
+
+/* Keep the gradient overlay full card so text stays readable */
+.theme-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(8,8,10,.98) 50%, rgba(8,8,10,.3) 80%, transparent 100%);
+}
+/* .tc-1 .theme-card-bg{background:linear-gradient(160deg,#2A1008 0%,#5C1E10 40%,#1A0A06 100%)} */
+/* .tc-2 .theme-card-bg{background:linear-gradient(160deg,#061A0E 0%,#1A4028 40%,#0A1C10 100%)} */
+/* .tc-3 .theme-card-bg{background:linear-gradient(160deg,#0A1220 0%,#1A2C50 40%,#08101E 100%)} */
+/* .tc-4 .theme-card-bg{background:linear-gradient(160deg,#1A1006 0%,#3A2A0A 40%,#120E04 100%)} */
+/* .tc-5 .theme-card-bg{background:linear-gradient(160deg,#0A1016 0%,#182030 40%,#08080E 100%)} */
+.theme-card::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(8,8,10,.95) 0%,rgba(8,8,10,.3) 50%,transparent 100%)}
+.theme-card-ph{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,223,.08);white-space:nowrap;font-family:'Jost',sans-serif;pointer-events:none}
+.theme-card-content{position:relative;z-index:2}
+.theme-num{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(243,235,223,.35);margin-bottom:12px}
+.theme-accent{width:24px;height:2px;margin-bottom:14px;transition:width .4s cubic-bezier(.16,1,.3,1)}
+.theme-card:hover .theme-accent{width:40px}
+.tc-1 .theme-accent{background:var(--terra)}.tc-2 .theme-accent{background:var(--fern)}.tc-3 .theme-accent{background:var(--sky)}.tc-4 .theme-accent{background:var(--gold)}.tc-5 .theme-accent{background:#A08CC8}
+.theme-title{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.2vw,28px);font-weight:500;line-height:1.15;color:var(--cream);margin-bottom:10px;letter-spacing:-.01em}
+.theme-stat{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;font-style:italic;color:var(--gold);line-height:1;margin-bottom:8px}
+.theme-desc{font-size:12px;font-weight:300;line-height:1.65;color:rgba(243,235,223,.5);max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.16,1,.3,1),opacity .4s;opacity:0}
+.theme-card:hover .theme-desc{max-height:100px;opacity:1}
+/* STORIES */
+.stories{background:var(--cream);padding:120px 0;color:var(--ink)}
+.stories-head{padding:0 56px;margin-bottom:72px}
+.stories-head-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+.stories-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,72px);font-weight:300;line-height:1;letter-spacing:-.025em;color:var(--ink)}
+.stories-title em{font-style:italic;color:var(--terra)}
+.pull-quote-section{background:var(--bark);padding:80px 56px;display:flex;align-items:center;gap:60px;margin:72px 0}
+.pq-mark{font-family:'Cormorant Garamond',serif;font-size:160px;line-height:.5;color:var(--gold);opacity:.3;flex-shrink:0;font-style:italic;user-select:none}
+.pq-text{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:400;font-style:italic;line-height:1.4;color:var(--cream);flex:1}
+.pq-author{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:20px;font-style:normal}
+.story-cards{display:grid;grid-template-columns:1.6fr 1fr;gap:0;padding:0 56px}
+.sc-main{aspect-ratio:4/3;overflow:hidden;position:relative;background:linear-gradient(140deg,#181410,#221C12);display:flex;align-items:center;justify-content:center}
+.sc-ph{position:absolute;inset:0;background:linear-gradient(160deg,#1A1208 0%,#0E0C06 60%,#1A1410 100%);display:flex;align-items:center;justify-content:center}
+.sc-ph-text{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,223,.1);font-family:'Jost',sans-serif}
+.sc-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(8,8,10,.8) 0%,transparent 50%)}
+.sc-text{position:absolute;bottom:32px;left:32px;right:32px;z-index:2}
+.sc-title-big{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2.5vw,34px);font-weight:500;color:var(--cream);line-height:1.2;margin-bottom:10px}
+.sc-excerpt{font-size:13px;font-weight:300;color:rgba(243,235,223,.6);line-height:1.7}
+.story-side{display:flex;flex-direction:column;gap:0;border-left:1px solid var(--parch)}
+.story-side-item{padding:36px 32px;border-bottom:1px solid var(--parch);position:relative;overflow:hidden;transition:background .3s}
+.story-side-item:hover{background:rgba(26,24,18,.04)}
+.story-side-item:last-child{border-bottom:none}
+.ssi-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:10px}
+.ssi-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.2}
+.ssi-text{font-size:13px;font-weight:300;color:var(--mid);line-height:1.7}
+.ssi-link{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-top:14px;display:flex;align-items:center;gap:6px}
+/* HUMAN STORIES */
+.human-stories{background:var(--void);padding:120px 56px}
+.hs-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,60px);font-weight:300;color:var(--cream);line-height:1.0;letter-spacing:-.025em;margin-bottom:60px}
+.hs-title em{font-style:italic;color:var(--terra)}
+.hs-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.hs-card{background:rgba(255,255,255,.025);border:1px solid rgba(243,235,223,.07);padding:40px 36px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.hs-card:hover{border-color:rgba(200,160,82,.2);transform:translateY(-4px)}
+.hs-card-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.hs-card-tag::before{content:'';width:16px;height:1px;background:var(--gold)}
+.hs-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,1.8vw,22px);font-weight:400;font-style:italic;line-height:1.55;color:rgba(243,235,223,.85);margin-bottom:24px}
+.hs-attribution{font-size:12px;font-weight:500;color:rgba(243,235,223,.4);letter-spacing:.04em}
+.hs-impact-tag{margin-top:20px;display:inline-block;background:rgba(200,160,82,.1);padding:6px 14px;font-size:11px;letter-spacing:.08em;color:var(--gold)}
+/* CLIMATE */
+.climate{background:var(--forest);padding:140px 56px;position:relative;overflow:hidden}
+.climate::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 90% 10%,rgba(90,148,104,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 10% 90%,rgba(200,160,82,.06) 0%,transparent 60%)}
+.climate-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center;position:relative;z-index:1}
+.climate-title{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,82px);font-weight:300;line-height:.95;letter-spacing:-.025em;color:var(--white)}
+.climate-title em{font-style:italic;color:var(--fern)}
+.climate-items{display:flex;flex-direction:column;gap:0}
+.climate-item{padding:28px 0;border-top:1px solid rgba(243,235,223,.1);display:flex;gap:24px;align-items:flex-start;transition:padding .3s}
+.climate-item:hover{padding-left:16px}
+.ci-num{font-family:'Cormorant Garamond',serif;font-size:13px;font-style:italic;color:var(--fern);flex-shrink:0;margin-top:2px;letter-spacing:.04em}
+.ci-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:6px}
+.ci-desc{font-size:13px;font-weight:300;color:rgba(243,235,223,.5);line-height:1.65}
+.climate-orb{position:absolute;right:10%;top:50%;transform:translateY(-50%);width:260px;height:260px;border-radius:50%;border:1px solid rgba(90,148,104,.2);display:flex;align-items:center;justify-content:center;animation:orb-pulse 6s ease-in-out infinite;z-index:0}
+.climate-orb::before{content:'';width:70%;height:70%;border-radius:50%;border:1px solid rgba(90,148,104,.15);animation:orb-pulse 6s ease-in-out infinite .5s}
+.climate-orb::after{content:'';position:absolute;width:35%;height:35%;border-radius:50%;background:rgba(90,148,104,.06);animation:orb-pulse 6s ease-in-out infinite 1s}
+@keyframes orb-pulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.08);opacity:1}}
+.climate-stats{padding:60px 56px}
+.climate-stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(90,148,104,.2)}
+.cs-item{padding:36px 32px;border-right:1px solid rgba(90,148,104,.2);text-align:center}
+.cs-item:last-child{border-right:none}
+.cs-num{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,52px);font-weight:600;font-style:italic;color:var(--fern);line-height:1;display:block;margin-bottom:8px}
+.cs-lbl{font-size:12px;font-weight:400;color:rgba(243,235,223,.4);letter-spacing:.04em}
+/* EDUCATION */
+.education{background:var(--cream);padding:120px 56px;color:var(--ink)}
+.edu-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,70px);font-weight:400;line-height:1.0;letter-spacing:-.025em;color:var(--ink);margin-bottom:16px}
+.edu-title em{font-style:italic;color:var(--sky)}
+.edu-lead{font-size:15px;font-weight:300;color:var(--mid);max-width:600px;line-height:1.8;margin-bottom:60px}
+.edu-programs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--parch)}
+.edu-prog{padding:52px 48px;border-right:1px solid var(--parch);position:relative;overflow:hidden;transition:background .3s}
+.edu-prog:hover{background:rgba(74,120,150,.03)}
+.edu-prog:last-child{border-right:none}
+.edu-prog-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:16px;display:block}
+.edu-prog-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--ink);margin-bottom:20px;line-height:1.15}
+.edu-prog-body{font-size:14px;font-weight:300;color:var(--mid);line-height:1.8;margin-bottom:28px}
+.edu-prog-features{list-style:none;display:flex;flex-direction:column;gap:8px}
+.edu-prog-features li{font-size:13px;font-weight:400;color:var(--mid);display:flex;align-items:flex-start;gap:10px}
+.edu-prog-features li::before{content:'→';color:var(--sky);font-size:12px;flex-shrink:0;margin-top:1px}
+.edu-stat-row{display:flex;gap:24px;margin-top:28px;padding-top:28px;border-top:1px solid var(--parch);flex-wrap:wrap}
+.edu-stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;font-style:italic;color:var(--sky);line-height:1}
+.edu-stat-lbl{font-size:11px;color:var(--mid);margin-top:2px}
+/* HEALTHCARE */
+.healthcare{background:var(--bark);padding:120px 56px}
+.hc-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:300;color:var(--cream);line-height:1.05;letter-spacing:-.025em;margin-bottom:60px}
+.hc-title em{font-style:italic;color:var(--fern)}
+.hc-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.hc-card{background:rgba(255,255,255,.025);border:1px solid rgba(243,235,223,.08);padding:40px 36px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.hc-card:hover{border-color:rgba(90,148,104,.3);transform:translateY(-4px)}
+.hc-card-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;font-style:italic;color:var(--fern);line-height:1;margin-bottom:16px}
+.hc-card-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--cream);margin-bottom:14px;line-height:1.2}
+.hc-card-body{font-size:13px;font-weight:300;color:rgba(243,235,223,.5);line-height:1.7}
+.hc-card-accent{position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--fern);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.hc-card:hover .hc-card-accent{transform:scaleX(1)}
+.hc-details{display:flex;flex-direction:column;gap:8px;margin-top:20px}
+.hc-detail-item{font-size:12px;color:rgba(243,235,223,.4);display:flex;align-items:flex-start;gap:10px}
+.hc-detail-item::before{content:'·';color:var(--fern);flex-shrink:0}
+/* EMPLOYEE */
+.employee{background:var(--void);padding:120px 56px}
+.ee-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.ee-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,64px);font-weight:300;color:var(--cream);line-height:1.05;letter-spacing:-.025em;margin-bottom:24px}
+.ee-title em{font-style:italic;color:var(--gold)}
+.ee-body{font-size:15px;font-weight:300;color:rgba(243,235,223,.45);line-height:1.85;margin-bottom:40px}
+.ee-stat-strip{display:flex;flex-direction:column;gap:0}
+.ee-stat-row{display:flex;align-items:center;gap:24px;padding:20px 0;border-top:1px solid rgba(243,235,223,.07)}
+.ee-stat-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;font-style:italic;color:var(--gold);line-height:1;min-width:100px}
+.ee-stat-lbl{font-size:13px;font-weight:400;color:rgba(243,235,223,.5);line-height:1.5}
+.ee-programs{display:flex;flex-direction:column;gap:20px}
+.ee-prog-card{background:rgba(255,255,255,.025);border:1px solid rgba(243,235,223,.07);padding:36px 36px;transition:border-color .3s}
+.ee-prog-card:hover{border-color:rgba(200,160,82,.25)}
+.ee-prog-partner{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
+.ee-prog-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--cream);margin-bottom:10px}
+.ee-prog-body{font-size:13px;font-weight:300;color:rgba(243,235,223,.45);line-height:1.7}
+.ee-prog-highlight{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+.ee-hl{background:rgba(200,160,82,.08);padding:6px 14px;font-size:11px;color:var(--gold-pale);border-left:2px solid var(--gold)}
+/* GALLERY */
+.gallery{background:var(--earth);padding:120px 56px}
+.gallery-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,70px);font-weight:300;color:var(--cream);line-height:1.0;letter-spacing:-.025em}
+.gallery-title em{font-style:italic;color:var(--gold)}
+.gallery-subtitle{font-size:15px;font-weight:300;color:rgba(243,235,223,.4);margin-top:16px;max-width:480px;line-height:1.75;margin-bottom:56px}
+.masonry{columns:3;column-gap:20px}
+.masonry-item{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;display:block;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.masonry-item:hover{transform:translateY(-4px)}
+.masonry-ph{width:100%;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.masonry-item:hover .masonry-ph{transform:scale(1.04)}
+.masonry-ph-text{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,223,.07);font-family:'Jost',sans-serif;padding:20px}
+.mi-h1{height:280px}.mi-h2{height:200px}.mi-h3{height:360px}.mi-h4{height:240px}.mi-h5{height:320px}
+.masonry-caption{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,10,.9) 0%,transparent 50%);opacity:0;transition:opacity .4s;display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.masonry-item:hover .masonry-caption{opacity:1}
+.mc-tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.mc-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--cream);line-height:1.2;margin-bottom:4px}
+.mc-loc{font-size:11px;color:rgba(243,235,223,.5)}
+/* GEO */
+.geo-reach{background:var(--void);padding:120px 56px}
+.geo-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.geo-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,64px);font-weight:300;color:var(--cream);line-height:1.05;letter-spacing:-.025em;margin-bottom:24px}
+.geo-title em{font-style:italic;color:var(--gold)}
+.geo-desc{font-size:15px;font-weight:300;color:rgba(243,235,223,.45);line-height:1.85;margin-bottom:40px}
+.geo-states{display:flex;flex-direction:column;gap:0}
+.geo-state{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-top:1px solid rgba(243,235,223,.07);transition:padding .3s;gap:16px;flex-wrap:wrap}
+.geo-state:hover{padding-left:12px}
+.gs-name{font-size:15px;font-weight:400;color:var(--cream)}
+.gs-programs{display:flex;gap:8px;flex-wrap:wrap}
+.gs-prog-tag{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;background:rgba(200,160,82,.1);color:var(--gold)}
+.india-svg{width:100%;max-width:460px;margin:0 auto;display:block}
+.india-state{fill:rgba(243,235,223,.04);stroke:rgba(243,235,223,.1);stroke-width:.5;transition:fill .3s}
+.india-state.active{animation:state-glow 3s ease-in-out infinite}
+.india-state.active-2{animation:state-glow-2 3s ease-in-out infinite .5s}
+@keyframes state-glow{0%,100%{fill:rgba(200,160,82,.15)}50%{fill:rgba(200,160,82,.3)}}
+@keyframes state-glow-2{0%,100%{fill:rgba(90,148,104,.15)}50%{fill:rgba(90,148,104,.3)}}
+/* FINANCE */
+.finance{background:var(--cream);padding:100px 56px;color:var(--ink)}
+.fin-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,58px);font-weight:400;color:var(--ink);line-height:1.0;letter-spacing:-.02em;margin-bottom:16px}
+.fin-title em{font-style:italic;color:var(--terra)}
+.fin-desc{font-size:15px;font-weight:300;color:var(--mid);max-width:540px;line-height:1.8;margin-bottom:56px}
+.fin-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}
+.fin-card{border:1px solid var(--parch);padding:40px}
+.fin-card-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:28px}
+.fin-bar-list{display:flex;flex-direction:column;gap:16px}
+.fin-bar-label{display:flex;justify-content:space-between;margin-bottom:6px}
+.fin-bar-name{font-size:13px;font-weight:400;color:var(--ink)}
+.fin-bar-pct{font-size:13px;font-weight:500;color:var(--mid)}
+.fin-bar-track{height:4px;background:var(--parch);position:relative;overflow:hidden}
+.fin-bar-fill{position:absolute;inset:0;right:auto;height:100%;width:0%;transition:width 1.4s cubic-bezier(.16,1,.3,1)}
+.in-view .fin-bar-fill{width:var(--pct,0%)}
+.fin-compliance{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--parch);margin-top:40px}
+.fin-comp-item{padding:28px 24px;text-align:center;border-right:1px solid var(--parch)}
+.fin-comp-item:last-child{border-right:none}
+.fin-comp-badge{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--sage);margin-bottom:6px}
+.fin-comp-label{font-size:11px;letter-spacing:.06em;color:var(--mid)}
+/* PARTNERS */
+.partners{background:var(--white);padding:100px 56px;color:var(--ink)}
+.partners-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:60px}
+.partners-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,56px);font-weight:400;letter-spacing:-.02em;color:var(--ink)}
+.partners-subtitle{font-size:13px;font-weight:300;color:var(--mid);max-width:300px;text-align:right;line-height:1.7}
+.partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--parch)}
+.partner-item{padding:32px 28px;border-right:1px solid var(--parch);display:flex;flex-direction:column;justify-content:space-between;transition:background .3s}
+.partner-item:hover{background:rgba(184,88,53,.04)}
+.partner-item:nth-child(4n){border-right:none}
+.partner-item:nth-child(n+5){border-top:1px solid var(--parch)}
+.partner-name{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:500;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
+.partner-type{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid)}
+.partner-arr{font-size:18px;color:var(--parch);margin-top:20px;transition:color .2s,transform .2s}
+.partner-item:hover .partner-arr{color:var(--terra);transform:translate(4px,-4px)}
+.partner-logo{
+  width: 120px;      /* reduce size */
+  height: 120px;     /* fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.partner-logo img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.partner-logo img{
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+}
+.media-section{
+  margin-top:56px;
+  padding-top:56px;
+  border-top:1px solid var(--parch);
+}
+
+.media-label{
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--mid);
+  margin-bottom:24px;
+}
+
+.media-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:nowrap;   /* Prevent wrapping */
+  overflow-x:auto;    /* Allow scrolling on mobile */
+  padding-bottom:10px;
+}
+
+.media-row::-webkit-scrollbar{
+  display:none;
+}
+
+.media-item{
+  flex:0 0 auto;      /* Prevent shrinking */
+  width:140px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.media-item img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  filter:grayscale(100%);
+  opacity:.8;
+  transition:all .3s ease;
+}
+
+.media-item:hover img{
+  filter:grayscale(0%);
+  opacity:1;
+  transform:scale(1.05);
+}
+/* FUTURE */
+.future{background:var(--forest);padding:120px 56px;position:relative;overflow:hidden}
+.future::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(90,148,104,.1) 0%,transparent 70%)}
+.future-title{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,7vw,96px);font-weight:300;color:var(--white);line-height:.95;letter-spacing:-.03em;margin-bottom:16px;position:relative;z-index:1;max-width:800px}
+.future-title em{font-style:italic;color:var(--fern)}
+.future-sub{font-size:16px;font-weight:300;color:rgba(243,235,223,.45);max-width:520px;line-height:1.8;margin-bottom:70px;position:relative;z-index:1}
+.future-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(90,148,104,.15);position:relative;z-index:1}
+.future-card{padding:44px 36px;border-right:1px solid rgba(90,148,104,.15);position:relative;overflow:hidden;transition:background .3s}
+.future-card:hover{background:rgba(90,148,104,.06)}
+.future-card:last-child{border-right:none}
+.fc-icon{font-size:28px;margin-bottom:20px}
+.fc-year{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fern);margin-bottom:14px;display:block}
+.fc-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--white);margin-bottom:12px;line-height:1.2}
+.fc-body{font-size:13px;font-weight:300;color:rgba(243,235,223,.45);line-height:1.7}
+.fc-target{margin-top:20px;padding-top:20px;border-top:1px solid rgba(90,148,104,.15);font-size:12px;color:rgba(243,235,223,.35)}
+.fc-target strong{color:var(--fern);font-weight:500}
+/* FOUNDER */
+.founder{background:var(--earth);padding:0;overflow:hidden}
+.founder {
+  background: var(--earth);
+  padding: 0;
+  overflow: hidden;
+  gap: 2px; /* or 4px for slightly more separation */
+}
+.founder + .founder {
+  margin-top: 20px;
+}
+.founder-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 10px;
+    /* align-items: start; important */
+}
+.founder-visual{position:relative;overflow:hidden;background:linear-gradient(160deg,#14100A 0%,#1E1810 40%,#0E0C07 100%);display:flex;align-items:flex-end}
+.founder-ph{position:absolute;inset:0;background:linear-gradient(160deg,#1A1208,#0E0A06,#1A1410);display:flex;align-items:center;justify-content:center}
+.founder-ph-text{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,223,.07);font-family:'Jost',sans-serif}
+.founder-gradient{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,var(--earth) 100%),linear-gradient(to top,rgba(8,8,10,.6) 0%,transparent 50%);z-index:1}
+.founder-title-overlay{position:absolute;bottom:40px;left:40px;z-index:2;font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;font-style:italic;line-height:.9;color:rgba(243,235,223,.08);letter-spacing:-.04em;user-select:none}
+.founder-content{padding:100px 80px 100px 60px;display:flex;flex-direction:column;justify-content:center}
+.founder-name{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,54px);font-weight:400;line-height:1;letter-spacing:-.025em;color:var(--cream);margin-bottom:6px}
+.founder-role{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:36px}
+.founder-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.4vw,28px);font-weight:400;font-style:italic;line-height:1.5;color:var(--cream);margin-bottom:28px;border-left:2px solid var(--terra);padding-left:24px}
+.founder-text{font-size:15px;font-weight:300;line-height:1.85;color:rgba(243,235,223,.55);margin-bottom:32px}
+.founder-creds{display:flex;flex-direction:column;gap:10px}
+.founder-cred-item{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:400;color:rgba(243,235,223,.45);letter-spacing:.03em}
+.founder-cred-item::before{content:'';width:16px;height:1px;background:var(--gold);flex-shrink:0}
+.founder-ph {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.founder-ph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+/* CTA */
+.cta{background:var(--void);padding:160px 56px;position:relative;overflow:hidden;text-align:center}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(46,106,72,.15) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 50% 0%,rgba(184,88,53,.08) 0%,transparent 60%)}
+.cta-eyebrow{margin:0 auto 32px}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,100px);font-weight:300;line-height:.95;letter-spacing:-.03em;color:var(--cream);margin-bottom:24px;position:relative;z-index:1}
+.cta-title em{font-style:italic;color:var(--gold)}
+.cta-sub{font-size:16px;font-weight:300;color:rgba(243,235,223,.45);max-width:480px;margin:0 auto 56px;line-height:1.75;position:relative;z-index:1}
+.cta-buttons{display:flex;gap:16px;justify-content:center;position:relative;z-index:1;flex-wrap:wrap}
+.cta-divider{height:1px;background:rgba(243,235,223,.08);margin:100px 0 0}
+.cta-deco{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(80px,18vw,220px);font-weight:700;font-style:italic;color:rgba(243,235,223,.015);white-space:nowrap;letter-spacing:-.04em;user-select:none;pointer-events:none}
+/* FOOTER */
+.footer{background:var(--earth);padding:72px 56px}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid rgba(243,235,223,.07)}
+.footer-logo-text{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--cream);letter-spacing:.04em;margin-bottom:16px}
+.footer-tagline{font-size:13px;font-weight:300;color:rgba(243,235,223,.4);line-height:1.75;max-width:280px}
+.footer-col-title{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-link{font-size:13px;font-weight:300;color:rgba(243,235,223,.45);transition:color .2s}
+.footer-link:hover{color:var(--cream)}
+.footer-bottom{padding-top:32px;display:flex;align-items:center;justify-content:space-between}
+.footer-legal{font-size:12px;color:rgba(243,235,223,.25)}
+.footer-social{display:flex;gap:20px}
+.footer-soc{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,235,223,.3);transition:color .2s}
+.footer-soc:hover{color:var(--gold)}
+/* RESPONSIVE */
+@media(max-width:1200px){.trans-grid{grid-template-columns:repeat(3,1fr)}.yn-grid-big{grid-template-columns:repeat(2,1fr)}.awp-pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1024px){.nav{padding:20px 36px}.hero{padding:0 36px 56px}.impact-grid{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(3,1fr)}.climate-grid{grid-template-columns:1fr;gap:60px}.partners-grid{grid-template-columns:repeat(2,1fr)}.founder-grid{grid-template-columns:1fr}.founder-visual{min-height:50vh}.footer-top{grid-template-columns:1fr 1fr}.mission-grid{grid-template-columns:1fr}.founders-grid{grid-template-columns:1fr}.awp-intro{grid-template-columns:1fr}.awp-programs{grid-template-columns:1fr}.ee-grid{grid-template-columns:1fr}.hc-grid{grid-template-columns:1fr 1fr}.geo-grid{grid-template-columns:1fr}.fin-grid{grid-template-columns:1fr}.future-cards{grid-template-columns:1fr}.climate-stats-inner{grid-template-columns:repeat(2,1fr)}.edu-programs{grid-template-columns:1fr}.edu-prog{border-right:none;border-bottom:1px solid var(--parch)}.hs-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav{padding:18px 24px}.nav-links{display:none}.hero{padding:0 24px 48px}.hero-badge{display:none}.theme-band{flex-direction:column;gap:10px;padding:20px 24px}.work{padding:80px 24px}.work-grid{grid-template-columns:1fr}.theme-card{aspect-ratio:5/3;border-right:none!important;border-top:1px solid rgba(243,235,223,.08)!important}.theme-card:first-child{border-top:none!important}.stories{padding:80px 0}.stories-head{padding:0 24px}.stories-head-grid{grid-template-columns:1fr}.story-cards{grid-template-columns:1fr;padding:0 24px}.pull-quote-section{padding:48px 24px;flex-direction:column}.about-mission,.founders-note,.awp-section,.transformation,.human-stories,.education,.healthcare,.employee,.gallery,.geo-reach,.finance,.future,.year-numbers{padding:80px 24px}.impact{padding:80px 24px}.impact-head{grid-template-columns:1fr}.partners{padding:80px 24px}.cta{padding:100px 24px}.footer{padding:56px 24px}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px}.cur-dot,.cur-ring{display:none}.masonry{columns:2}.hs-grid{grid-template-columns:1fr}.hc-grid{grid-template-columns:1fr}.fin-compliance{grid-template-columns:repeat(2,1fr)}.awp-pillars{border:none;grid-template-columns:1fr}.awp-pillar{border-right:none;border-top:1px solid var(--parch)}.trans-grid{grid-template-columns:repeat(2,1fr)}.yn-grid-big{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.masonry{columns:1}.trans-grid{grid-template-columns:1fr}.impact-grid{grid-template-columns:1fr}.impact-stat{border-right:none;border-top:1px solid var(--parch)}.impact-stat:first-child{border-top:none}.awp-metrics{grid-template-columns:1fr}.partner-item{border-right:none;border-bottom:1px solid var(--parch)}.partners-grid{grid-template-columns:1fr}.fin-compliance{grid-template-columns:1fr}.fin-comp-item{border-right:none;border-bottom:1px solid var(--parch)}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cur-dot" id="curDot"></div>
+<div class="cur-ring" id="curRing"></div>
+<div class="progress-bar" id="progress"></div>
+
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">GU</div>
+    Good Universe
+  </a>
+  <div class="nav-links">
+    <button class="nav-link" onclick="scrollTo2('about')">About</button>
+    <button class="nav-link" onclick="scrollTo2('awp')">programs</button>
+    <button class="nav-link" onclick="scrollTo2('work')">Themes</button>
+    <button class="nav-link" onclick="scrollTo2('gallery')">Gallery</button>
+    <button class="nav-link" onclick="scrollTo2('partners')">Partners</button>
+    <button class="nav-link" onclick="scrollTo2('contact')">Get Involved</button>
+  </div>
+  <button class="nav-cta" onclick="scrollTo2('contact')">Build Impact →</button>
+</nav>
+
+<section class="hero" id="home" style="padding-top: 100px;">
+  <div class="hero-atmosphere"></div>
+  <div class="hero-visual"><div class="hero-img-placeholder"></div></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-badge"><span>Impact Report</span><strong>2025  26</strong></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="hero-eyebrow-inner">Good Universe · Since 2015 · Hyderabad, India</span></div>
+    <h1 class="hero-title">
+      <span class="hline"><span class="hline-inner">Good Universe</span></span>
+      <span class="hline"><span class="hline-inner">Annual Impact</span></span>
+      <span class="hline"><span class="hline-inner">Report 2025–26</span></span>
+    </h1>
+    <p class="hero-sub">A decade of dignity, health, and transformation  reaching adolescent girls, women, and communities across India.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="scrollTo2('numbers')">Explore Our Impact</button>
+      <button class="btn-outline" onclick="scrollTo2('awp')">Read the Report ↓</button>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+</section>
+
+<div class="theme-band">
+  <div class="theme-band-text">Access to knowledge, dignity, and opportunity should never be determined by gender, geography, or circumstance.</div>
+  <div class="theme-band-ticker">
+    <span>1M+ Lives Impacted</span><span class="theme-band-sep">·</span>
+    <span>Section 8 · 12A · 80G</span><span class="theme-band-sep">·</span>
+    <span>BBC · The Hindu · TOI</span><span class="theme-band-sep">·</span>
+    <span>5 States · 10 Years</span>
+  </div>
+</div>
+
+<section class="impact" id="numbers">
+  <div class="impact-head">
+    <div data-reveal>
+      <div class="sec-eyebrow" style="color:var(--terra)">Impact at a Glance</div>
+      <h2 class="impact-head-title">Numbers that<br><em>matter deeply</em></h2>
+    </div>
+    <p class="impact-head-desc" data-reveal="up-2">Every statistic is a person. Every percentage is a community. Ten years of consistent, evidence-driven work at the margins that move the world forward.</p>
+  </div>
+  <div class="impact-grid">
+    <div class="impact-stat is-1" data-reveal>
+      <span class="stat-number" data-counter="100700" data-suffix="+">0</span>
+      <div class="stat-label">Lives Directly Impacted</div>
+      <div class="stat-sub">Across health, education, climate, and livelihood programs in underserved communities</div>
+    </div>
+    <div class="impact-stat is-2" data-reveal="up-1">
+      <span class="stat-number" data-counter="1000000" data-suffix="+">0</span>
+      <div class="stat-label">Extended Community Reach</div>
+      <div class="stat-sub">Families, communities, and ecosystems transformed through systemic, grassroots interventions</div>
+    </div>
+    <div class="impact-stat is-3" data-reveal="up-2">
+      <span class="stat-number" data-counter="10" data-suffix="+">0</span>
+      <div class="stat-label">Years of Grassroots Work</div>
+      <div class="stat-sub">A decade of trust built on the ground  village by village, school by school, girl by girl</div>
+    </div>
+    <div class="impact-stat is-4" data-reveal="up-3">
+      <span class="stat-number" data-counter="120" data-suffix="+">0</span>
+      <div class="stat-label">CSR & Global Partners</div>
+      <div class="stat-sub">Leading corporates, foundations, and institutions co-investing in systemic, lasting change</div>
+    </div>
+  </div>
+</section>
+
+<section class="year-numbers" id="year-stats">
+  <div data-reveal>
+    <div class="sec-eyebrow">Year in Numbers · 2025-26</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,62px);font-weight:300;color:var(--cream);line-height:1.05;letter-spacing:-.025em;max-width:700px">A year of <em style="font-style:italic;color:var(--gold)">depth, consistency,</em> and change that lasts.</h2>
+    <p style="font-size:15px;font-weight:300;color:rgba(243,235,223,.4);margin-top:16px;max-width:500px;line-height:1.75">This year's impact was built on the quality of every session, every conversation, every community that chose to change.</p>
+  </div>
+  <div class="yn-grid-big">
+    <div class="yn-stat" data-reveal><div class="yn-accent-bar"></div><span class="yn-big-num" data-counter="50000" data-suffix="+">0</span><div class="yn-label">Students Empowered</div><div class="yn-desc">Reached through education, health, and wellbeing initiatives across government schools</div></div>
+    <div class="yn-stat" data-reveal="up-1"><div class="yn-accent-bar"></div><span class="yn-big-num" data-counter="60000" data-suffix="+">0</span><div class="yn-label">Individuals Directly Engaged</div><div class="yn-desc">Across programs and field interventions in communities and institutions</div></div>
+    <div class="yn-stat" data-reveal="up-2"><div class="yn-accent-bar"></div><span class="yn-big-num">110+</span><div class="yn-label">Schools Covered</div><div class="yn-desc">Across 5 states  creating consistent, evidence-based on-ground impact</div></div>
+    <div class="yn-stat" data-reveal><div class="yn-accent-bar" style="background:var(--sage)"></div><span class="yn-big-num" style="color:var(--fern)" data-counter="18000" data-suffix="+">0</span><div class="yn-label">Trees Planted</div><div class="yn-desc">Using Miyawaki dense-native method  projected 200–300 tonnes CO₂ absorbed over lifetime</div></div>
+    <div class="yn-stat" data-reveal="up-1"><div class="yn-accent-bar" style="background:var(--sage)"></div><span class="yn-big-num" style="color:var(--fern)">480K</span><div class="yn-label">Disposable Pads Prevented</div><div class="yn-desc">From entering landfills annually through sustainable menstrual health education</div></div>
+    <div class="yn-stat" data-reveal="up-2"><div class="yn-accent-bar" style="background:var(--sky)"></div><span class="yn-big-num" style="color:var(--sky)" data-counter="660" data-suffix="+">0</span><div class="yn-label">Youth Skilled</div><div class="yn-desc">Trained in industry-relevant vocational tracks with 80%+ placement rates</div></div>
+    <div class="yn-stat" data-reveal><div class="yn-accent-bar" style="background:var(--gold)"></div><span class="yn-big-num" data-counter="300" data-suffix="+">0</span><div class="yn-label">Health Camp Beneficiaries</div><div class="yn-desc">Dental, ENT, and gynecology services delivered in urban informal settlements</div></div>
+    <div class="yn-stat" data-reveal="up-1"><div class="yn-accent-bar" style="background:var(--gold)"></div><span class="yn-big-num">50 <span style="font-size:.5em">Daily</span></span><div class="yn-label">Senior Citizens in Elder Care</div><div class="yn-desc">Swayam Day Care Centre  healthcare, nutrition, recreation, and dignity every day</div></div>
+    <div class="yn-stat" data-reveal="up-2"><div class="yn-accent-bar" style="background:var(--terra)"></div><span class="yn-big-num" style="color:var(--terra)" data-counter="700" data-suffix="+">0</span><div class="yn-label">Corporate Volunteers</div><div class="yn-desc">Contributing 600+ cumulative hours  Micron, Barry Callebaut, Novartis, Infosys and more</div></div>
+  </div>
+</section>
+
+<section class="about-mission" id="about">
+  <div class="mission-grid">
+    <div data-reveal>
+      <div class="sec-eyebrow">About Good Universe</div>
+      <h2 class="mission-title">Built on belief.<br>Driven by <em>dignity.</em></h2>
+      <p class="mission-statement">Good Universe was founded with a simple but powerful belief  that access to knowledge, dignity, and opportunity should never be determined by gender, geography, or circumstance.</p>
+      <p class="mission-body">Over a decade, that belief has shaped everything we do. Our work sits at the intersection of menstrual health, gender equity, climate action, education, and skilling  with a focus on building solutions that are both practical and sustainable. We engage with communities through awareness, training, research, and on-ground implementation, ensuring that information is not only shared but understood, applied, and carried forward.<br><br>At the heart of our approach is the idea that change begins with people. When individuals are equipped with the right tools and knowledge, they are able to make informed choices, challenge existing norms, and influence the spaces around them. This is how small interventions grow into lasting impact. Collaboration continues to be central to our work  partnering with institutions, governments, schools, and community networks to remain responsive to real needs while building systems that support long-term, generational change.</p>
+    </div>
+    <div data-reveal="up-2">
+      <div class="mission-pillars">
+        <div class="mission-pillar"><div class="mp-num">01</div><div><div class="mp-title">Sustainable Menstrual Health & Reproductive Rights</div><div class="mp-desc">Demystifying menstruation, promoting eco-friendly practices, and strengthening scientific literacy across government schools, slums, and tribal communities. Turning stigma into knowledge and silence into confidence.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">02</div><div><div class="mp-title">Adolescent Mental Wellbeing</div><div class="mp-desc">Building emotional awareness, resilience, and help-seeking behaviour in classrooms where these conversations have never happened  transforming confusion into clarity and isolation into dialogue.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">03</div><div><div class="mp-title">Nutrition & Anaemia Intervention</div><div class="mp-desc">Addressing the alarming reality that two-thirds of Indian adolescent girls aged 10–19 are affected by anaemia  undermining energy, concentration, immunity, and long-term health outcomes.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">04</div><div><div class="mp-title">Life Skills & Self-Belief</div><div class="mp-desc">Structured sessions on self-worth, self-acceptance, boundary-setting, and confidence  moving girls from hesitation to self-belief, making empowerment visible and measurable.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">05</div><div><div class="mp-title">Climate Action & Gender Equity</div><div class="mp-desc">Where green livelihoods, Miyawaki afforestation, sustainable menstruation, and women-led environmental stewardship converge  building futures that are both just and regenerative.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">06</div><div><div class="mp-title">Education & Youth Livelihoods</div><div class="mp-desc">STEM mentorship, career counselling, vocational skilling  transforming government school classrooms into innovation ecosystems and underserved youth into confident contributors.</div></div></div>
+        <div class="mission-pillar"><div class="mp-num">07</div><div><div class="mp-title">Skill Development</div><div class="mp-desc">Good Universe equips underserved communities with practical skills for employment, entrepreneurship, and personal growth. Our initiatives focus on creating pathways to dignified livelihoods, economic resilience, and long-term self-reliance.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founders-note">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--gold)">From the Leadership</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,58px);font-weight:300;color:var(--cream);letter-spacing:-.025em;line-height:1.05;max-width:640px">What continues to stand out is the <em style="font-style:italic;color:var(--gold)">resilience and openness</em> of the people we work with.</h2>
+  </div>
+  <div class="founders-grid">
+    <div class="founder-card" data-reveal="up-1">
+      <div class="fc-quote">This year has been a reminder that change does not always arrive in big, visible moments. More often, it unfolds quietly in classrooms, in conversations, and in the confidence of someone who finally feels seen and heard. Across every program, we have seen how access to the right information can shift perspectives and unlock confidence. Impact, for us, has never been about scale alone. It is about depth, consistency, and the ability to create change that lasts beyond a single intervention.</div>
+      <div class="fc-name">Kamal Nayak</div>
+      <div class="fc-role">Founder & CEO · Good Universe</div>
+    </div>
+    <div class="founder-card" data-reveal="up-2">
+      <div class="fc-quote">At its core, Good Universe was built on the belief that meaningful change happens when people feel empowered to take ownership of their choices, their health, and their futures. A single session can open up dialogue. A single resource can remove a barrier. A single moment of understanding can change how someone sees themselves and their possibilities. What stands out most is the collective effort  our team, partners, volunteers, and community members each playing a vital role in building momentum year after year.</div>
+      <div class="fc-name">Neloufer Tabassum</div>
+      <div class="fc-role">COO & Co-Founder · Good Universe</div>
+    </div>
+  </div>
+</section>
+
+<section class="awp-section" id="awp">
+  <div class="awp-intro">
+    <div data-reveal>
+      <div class="sec-eyebrow" style="color:var(--terra)">Adolescent Wellbeing program</div>
+      <h2 class="awp-title">Four pillars.<br>One <em>unstoppable</em> girl.</h2>
+      <p style="font-size:15px;font-weight:300;color:var(--mid);margin-top:20px;line-height:1.8">In a context where only 57.6% of young women in rural India use hygienic menstrual protection and nearly 23 million girls drop out of school annually due to menstruation-related challenges  intervention is not optional. It is urgent.</p>
+    </div>
+    <div data-reveal="up-2">
+      <div class="awp-stat-block">
+        <div class="awp-stat-big">18,000+</div>
+        <div class="awp-stat-label">Adolescent girls reached through the AWP in 2025–26</div>
+      </div>
+      <div style="margin-top:16px;font-size:14px;font-weight:300;color:var(--mid);line-height:1.75">The Adolescent Well-Being program is a bold, school-based intervention built on four transformative pillars: sustainable sexual and reproductive health education, mental health literacy, nutrition awareness, and life skills development  delivered across government schools in Telangana and beyond.</div>
+      <div style="margin-top:20px;display:flex;gap:16px;flex-wrap:wrap">
+        <div style="background:rgba(184,88,53,.08);padding:8px 16px;border-left:2px solid var(--terra);font-size:12px;color:var(--terra);font-weight:500">5 States</div>
+        <div style="background:rgba(184,88,53,.08);padding:8px 16px;border-left:2px solid var(--terra);font-size:12px;color:var(--terra);font-weight:500">110 Government Schools</div>
+        <div style="background:rgba(184,88,53,.08);padding:8px 16px;border-left:2px solid var(--terra);font-size:12px;color:var(--terra);font-weight:500">500+ Community Women</div>
+      </div>
+    </div>
+  </div>
+  <div class="awp-pillars" data-reveal>
+    <div class="awp-pillar awp-p1">
+      <!-- <div class="awp-pillar-icon">🌸</div> -->
+      <div class="awp-pillar-num">Pillar 01</div>
+      <div class="awp-pillar-title">Menstrual Health & Reproductive Education</div>
+      <div class="awp-pillar-body">Demystifying menstruation through scientific, shame-free education. Promoting eco-friendly menstrual practices. Before intervention  as few as 12% of girls could explain menstruation. After our intervention, it increased to 91%. Not just knowledge. The shift was in how they held themselves.</div>
+    </div>
+    <div class="awp-pillar awp-p2">
+      <!-- <div class="awp-pillar-icon">🧠</div> -->
+      <div class="awp-pillar-num">Pillar 02</div>
+      <div class="awp-pillar-title">Mental Health Literacy</div>
+      <div class="awp-pillar-body">Building emotional vocabulary, resilience, and help-seeking behaviour in classrooms where these conversations have never happened. Before  9.7% correctly defined mental health. After our intervention, it increased to 89%. Confusion transformed into clarity. Isolation into dialogue.</div>
+    </div>
+    <div class="awp-pillar awp-p3">
+      <!-- <div class="awp-pillar-icon">🌿</div> -->
+      <div class="awp-pillar-num">Pillar 03</div>
+      <div class="awp-pillar-title">Nutrition & Anaemia Awareness</div>
+      <div class="awp-pillar-body">Addressing the crisis that two-thirds of Indian adolescent girls aged 10–19 are anaemic  directly impacting energy, attendance, and academic performance. Before  16% understood anaemia. After our intervention, it increased to 91%. Knowledge that protects bodies and secures futures.</div>
+    </div>
+    <div class="awp-pillar awp-p4">
+      <!-- <div class="awp-pillar-icon">⭐</div> -->
+      <div class="awp-pillar-num">Pillar 04</div>
+      <div class="awp-pillar-title">Life Skills & Self-Belief</div>
+      <div class="awp-pillar-body">Structured sessions on self-worth, boundary-setting, and confidence. Before  9.9% felt very confident in their strengths. After our intervention, it increased to 88%. Before  17.9% felt comfortable saying no. After our intervention, it increased to 83%.. When empowerment becomes measurable, it becomes real.</div>
+    </div>
+  </div>
+  <h3 class="awp-programs-title" data-reveal>Programs in <em style="font-style:italic;color:var(--terra)">Partnership</em></h3>
+  <div class="awp-programs">
+    <div class="awp-prog-card" data-reveal>
+      <span class="awp-prog-partner">NATCO Pharma · CSR program</span>
+      <div class="awp-prog-name">AWP  Sustainable Health Education · 1,000 Girls</div>
+      <div class="awp-prog-detail">Reached 1,000 adolescent girls across government schools through structured interventions in reproductive health, mental health literacy, nutrition awareness, and life skills. Baseline and endline assessments demonstrate measurable, high-impact shifts across all four pillars of the program.</div>
+      <div class="awp-metrics">
+        <div class="awp-metric"><div class="awp-metric-before">Before: 18.7%</div><div class="awp-metric-after">87.1%</div><div class="awp-metric-label">Understand menarche</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 14%</div><div class="awp-metric-after">86.7%</div><div class="awp-metric-label">Define mental health</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 21%</div><div class="awp-metric-after">71%</div><div class="awp-metric-label">Understand anaemia</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 9.9%</div><div class="awp-metric-after">88%</div><div class="awp-metric-label">Confident in strengths</div></div>
+      </div>
+    </div>
+    <div class="awp-prog-card" data-reveal="up-1">
+      <span class="awp-prog-partner">Centific Global Solutions · CSR program</span>
+      <div class="awp-prog-name">AWP  Knowledge to Confidence · ~1,000 Girls · 4 Schools</div>
+      <div class="awp-prog-detail">Reaching nearly 1,000 adolescent girls across 4 government schools  building a structured foundation in health literacy, emotional confidence, and self-belief. Baseline assessments revealed hesitation and misinformation. Endline data showed sharp, structural improvement across every indicator measured.</div>
+      <div class="awp-metrics">
+        <div class="awp-metric"><div class="awp-metric-before">Before: 26%</div><div class="awp-metric-after">91%</div><div class="awp-metric-label">Explain menstruation</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 22%</div><div class="awp-metric-after">89%</div><div class="awp-metric-label">Define mental health</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 28%</div><div class="awp-metric-after">78%</div><div class="awp-metric-label">Understand anaemia</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 15%</div><div class="awp-metric-after">84%</div><div class="awp-metric-label">Strong self-confidence</div></div>
+      </div>
+    </div>
+    <div class="awp-prog-card" data-reveal>
+      <span class="awp-prog-partner">Pandrol-Rahee · CSR program</span>
+      <div class="awp-prog-name">AWP  From Silence to Strength</div>
+      <div class="awp-prog-detail">Starting from some of the lowest baselines in our program history  12.7% menstrual understanding, 9.7% mental health literacy  this program delivered our most dramatic transformations, proving that depth of need is met by depth of response. From silence to strength, one session at a time.</div>
+      <div class="awp-metrics">
+        <div class="awp-metric"><div class="awp-metric-before">Before: 12.7%</div><div class="awp-metric-after">87.1%</div><div class="awp-metric-label">Understand menarche</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 9.7%</div><div class="awp-metric-after">87.7%</div><div class="awp-metric-label">Define mental health</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 16%</div><div class="awp-metric-after">91%</div><div class="awp-metric-label">Understand anaemia</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 13.9%</div><div class="awp-metric-after">87%</div><div class="awp-metric-label">Confident in strengths</div></div>
+      </div>
+    </div>
+    <div class="awp-prog-card" data-reveal="up-1">
+      <span class="awp-prog-partner">SBI Foundation · Flagship · Nalgonda District</span>
+      <div class="awp-prog-name">AWP at Scale  2,000 Girls · 500 Community Women · 12 Schools</div>
+      <div class="awp-prog-detail">The flagship program of the year. Nalgonda has historically reported high rates of adolescent anaemia, early marriage vulnerability, and limited reproductive health education. For first-generation learners where menstrual stigma remains deeply embedded, this is not supplementary work. It is essential. Early results signal not marginal change, but structural improvement.</div>
+      <div class="awp-metrics">
+        <div class="awp-metric"><div class="awp-metric-before">Before: 16%</div><div class="awp-metric-after">82%</div><div class="awp-metric-label">Understand menarche</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 15%</div><div class="awp-metric-after">81%</div><div class="awp-metric-label">Define mental health</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 17%</div><div class="awp-metric-after">83%</div><div class="awp-metric-label">Understand anaemia</div></div>
+        <div class="awp-metric"><div class="awp-metric-before">Before: 10%</div><div class="awp-metric-after">88%</div><div class="awp-metric-label">Strong self-confidence</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="transformation">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--gold)">The Data Behind the Change</div>
+    <h2 class="trans-title">What changes when<br>a girl is <em>truly seen.</em></h2>
+    <p class="trans-subtitle">Aggregated shifts across all AWP programs  not marginal improvements, but structural transformations in knowledge, confidence, and health literacy.</p>
+  </div>
+  <div class="trans-grid" data-reveal>
+    <div class="trans-metric">
+      <div class="trans-before">Average baseline</div>
+      <div class="trans-num-before">~16%</div>
+      <div class="trans-arrow">↓</div>
+      <div class="trans-num-after">88%+</div>
+      <div class="trans-topic">Menstrual Health Literacy</div>
+    </div>
+    <div class="trans-metric">
+      <div class="trans-before">Average baseline</div>
+      <div class="trans-num-before">~15%</div>
+      <div class="trans-arrow">↓</div>
+      <div class="trans-num-after">86%+</div>
+      <div class="trans-topic">Mental Health Awareness</div>
+    </div>
+    <div class="trans-metric">
+      <div class="trans-before">Average baseline</div>
+      <div class="trans-num-before">~20%</div>
+      <div class="trans-arrow">↓</div>
+      <div class="trans-num-after">81%+</div>
+      <div class="trans-topic">Anaemia Understanding</div>
+    </div>
+    <div class="trans-metric">
+      <div class="trans-before">Average baseline</div>
+      <div class="trans-num-before">~12%</div>
+      <div class="trans-arrow">↓</div>
+      <div class="trans-num-after">87%+</div>
+      <div class="trans-topic">Self-Confidence & Strengths</div>
+    </div>
+    <div class="trans-metric">
+      <div class="trans-before">Average baseline</div>
+      <div class="trans-num-before">~18%</div>
+      <div class="trans-arrow">↓</div>
+      <div class="trans-num-after">81%+</div>
+      <div class="trans-topic">Comfort Asserting Boundaries</div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="work-head">
+    <div data-reveal><div class="sec-eyebrow" style="color:var(--gold)">Thematic Areas</div></div>
+    <h2 class="work-title" data-reveal="up-1">Work that lives<br>at the <em>intersection</em><br>of everything urgent</h2>
+  </div>
+  <div class="work-grid">
+    <div class="theme-card tc-1"><div class="theme-card-bg"></div>  <img
+    class="theme-card-img"
+    src="./images/healthsystem.jpg"
+    alt="Women's Health"
+  /><div class="theme-card-ph">Women's Health</div><div class="theme-card-content"><div class="theme-num">01</div><div class="theme-accent"></div><div class="theme-title">Women's Health & Dignity</div><div class="theme-stat">55,000+</div><div class="theme-desc">Menstrual health, SRHR education, and reproductive rights reaching adolescent girls across government schools, slums, and tribal communities with honesty and without shame.</div></div></div>
+    <div class="theme-card tc-2"><div class="theme-card-bg"></div> <img
+    class="theme-card-img"
+    src="./images/climateaction.jpeg"
+    alt="Climate Action"
+  /><div class="theme-card-ph">Climate Action</div><div class="theme-card-content"><div class="theme-num">02</div><div class="theme-accent"></div><div class="theme-title">Climate Action & Resilience</div><div class="theme-stat">18,000+ Trees</div><div class="theme-desc">Miyawaki afforestation, sustainable menstruation, community resilience-building. Where gender equity and climate action converge  from Sangareddy forests to global advocacy forums.</div></div></div>
+    <div class="theme-card tc-3"><div class="theme-card-bg"> </div><img
+    class="theme-card-img"
+    src="./images/sten&future.jpeg"
+    alt="STEM Education"
+  /><div class="theme-card-ph">STEM Education</div><div class="theme-card-content"><div class="theme-num">03</div><div class="theme-accent"></div><div class="theme-title">STEM & Future Education</div><div class="theme-stat">30+ Schools</div><div class="theme-desc">Hands-on STEM kits, career mentorship, and digital literacy transforming government school classrooms into innovation ecosystems where first-generation learners find futures.</div></div></div>
+    <div class="theme-card tc-4"><div class="theme-card-bg"></div> <img
+    class="theme-card-img"
+    src="./images/Youth.jpeg"
+    alt="Youth Skilling"
+  /><div class="theme-card-ph">Youth Skilling</div><div class="theme-card-content"><div class="theme-num">04</div><div class="theme-accent"></div><div class="theme-title">Youth Livelihoods & Skills</div><div class="theme-stat">84.2%</div><div class="theme-desc">Industry-aligned vocational training across 6 tracks delivering 84.2% placement rate and pathways to sustainable economic independence for 660+ youth this year.</div></div></div>
+    <div class="theme-card tc-5"><div class="theme-card-bg"></div> <img
+    class="theme-card-img"
+    src="./images/communityhealth.jpeg"
+    alt="Community Health"
+  /><div class="theme-card-ph">Community Health</div><div class="theme-card-content"><div class="theme-num">05</div><div class="theme-accent"></div><div class="theme-title">Community Health Systems</div><div class="theme-stat">22,000</div><div class="theme-desc">PHC infrastructure, preventive health camps, elder care  building institutional capacity that outlasts every program cycle and strengthens primary healthcare at the grassroots.</div></div></div>
+  </div>
+</section>
+
+<section class="stories" id="stories">
+  <div class="stories-head">
+    <div class="stories-head-grid">
+      <div data-reveal><div class="sec-eyebrow" style="color:var(--terra)">Field Stories</div><h2 class="stories-title">Stories from<br><em>the ground</em></h2></div>
+      <p style="font-size:15px;font-weight:300;color:var(--mid);line-height:1.8" data-reveal="up-2">Every number in our impact report is a human story. Here are a few  of courage, of curiosity, of communities that chose to change the world around them.</p>
+    </div>
+  </div>
+  <div class="pull-quote-section">
+    <div class="pq-mark" aria-hidden="true">"</div>
+    <blockquote>
+      <div class="pq-text" data-reveal>My father earned ₹1,800 a month. He guarded other people's homes so I could one day build something of my own. Good Universe was that something  the belief that access to dignity should not be determined by geography.</div>
+      <footer class="pq-author" data-reveal="up-1"> Kamal Nayak, Founder & CEO · Good Universe</footer>
+    </blockquote>
+  </div>
+  <div class="story-cards">
+    <div class="story-card" data-reveal>
+      <div class="sc-main"><div class="sc-ph">
+        <div class="sc-ph">
+  <img src="/images/whenagirlasks.jpeg" alt="" class="sc-image">
+  <div class="sc-overlay"></div>
+  <!-- <div class="sc-ph-text">Field Documentary · Nalgonda, Telangana</div> -->
+</div>
+</div><div class="sc-overlay"></div>
+        <div class="sc-text"><div class="sc-title-big">When a girl asks what she wants  not what she has</div><div class="sc-excerpt">A woman in rural Odisha, earning ₹300 on a good day, handed us her phone and asked for a photo. She wants her daughter to study medicine. That is what change looks like before it has a name: a mother who dares to dream beyond the edges of her own life.</div></div>
+      </div>
+    </div>
+    <div class="story-side">
+      <div class="story-side-item" data-reveal><div class="ssi-tag">Menstrual Health · Telangana</div><div class="ssi-title">From 14% to 89%: Menstrual literacy in a single semester</div><div class="ssi-text">Before our intervention, only 14% could scientifically explain menstruation. After one semester  89%. The shift wasn't just in knowledge. It was in how they held themselves. Shoulders straighter. Voices steadier.</div><div class="ssi-link">Read the story →</div></div>
+      <div class="story-side-item" data-reveal="up-1"><div class="ssi-tag">Skill Development · Hyderabad</div><div class="ssi-title">Roshni trained in tailoring. Today she runs three women's SHGs.</div><div class="ssi-text">The BE Skill Centre trained 663 youth in FY25. Roshni was one. Twelve months later, she employs seven others and mentors the next cohort herself. This is what 84.2% placement rates look like in practice.</div><div class="ssi-link">Read the story →</div></div>
+      <div class="story-side-item" data-reveal="up-2"><div class="ssi-tag">Climate · Sangareddy, Telangana</div><div class="ssi-title">A women's SHG planted 1,200 native saplings. They called it their forest.</div><div class="ssi-text">The Miyawaki plantation in Sangareddy wasn't just about carbon. It was about belonging  a community that claimed a piece of the future as their own. 83% now acknowledge women-led climate action.</div><div class="ssi-link">Read the story →</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="human-stories">
+  <div data-reveal><div class="sec-eyebrow" style="color:var(--terra)">Voices from the Field</div><h2 class="hs-title">The moments that<br><em>define the work.</em></h2></div>
+  <div class="hs-grid">
+    <div class="hs-card" data-reveal><div class="hs-card-tag">Adolescent Wellbeing · Nalgonda</div><div class="hs-quote">Before the sessions, I used to miss school every month and tell nobody why. Now I understand my body. I talk to my friends. I came back  and I don't plan to stop.</div><div class="hs-attribution">Class 8 student, Government School · Nalgonda District</div><div class="hs-impact-tag">88% now feel confident in their strengths</div></div>
+    <div class="hs-card" data-reveal="up-1"><div class="hs-card-tag">Mental Health · Telangana</div><div class="hs-quote">There was no word for what I was feeling. After the session, I learned it was anxiety. Just having a name for it  that changed everything. I asked for help for the first time</div><div class="hs-attribution">Class 9 student, AWP Participant</div><div class="hs-impact-tag">71.7% now feel comfortable expressing emotions</div></div>
+    <div class="hs-card" data-reveal="up-2"><div class="hs-card-tag">Life Skills · Government School</div><div class="hs-quote">I used to say yes to everything because I didn't know I was allowed to say no. Now I know that boundary-setting is not disrespect. It is dignity.</div><div class="hs-attribution">Class 10 student, AWP program</div><div class="hs-impact-tag">83.3% now comfortable asserting boundaries</div></div>
+    <div class="hs-card" data-reveal><div class="hs-card-tag">Skill Development · Hyderabad</div><div class="hs-quote">My father earned ₹1,800 a month as a security guard. After the skilling program, I now earn three times that  and I am teaching six others to do the same.</div><div class="hs-attribution">Graduate, BE Skill Centre · Hyderabad</div><div class="hs-impact-tag">84.2% placement rate · 663 youth trained</div></div>
+    <div class="hs-card" data-reveal="up-1"><div class="hs-card-tag">Climate Action · Sangareddy</div><div class="hs-quote">They told us these saplings would grow into a forest. We didn't believe it at first. Now, when I walk past them, I touch the leaves. It is ours. We built it.</div><div class="hs-attribution">SHG Member, Miyawaki Plantation · Sangareddy</div><div class="hs-impact-tag">82% now understand community environmental stewardship</div></div>
+    <div class="hs-card" data-reveal="up-2"><div class="hs-card-tag">STEM Education · School Development</div><div class="hs-quote">The STEM kit made me feel like a scientist. Not because of the kit  because someone came to our school and told us we could be scientists. I never forgot that day.</div><div class="hs-attribution">Class 7 student, NGENUX School Development program</div><div class="hs-impact-tag">77% improved STEM problem-solving confidence</div></div>
+  </div>
+</section>
+
+<section class="climate" id="climate">
+  <div class="climate-orb" aria-hidden="true"></div>
+  <div class="climate-grid">
+    <div>
+      <div data-reveal><div class="sec-eyebrow" style="color:var(--fern)">Climate & Sustainability</div><h2 class="climate-title">A planet<br>worth<br><em>inheriting</em></h2></div>
+      <p style="font-size:15px;font-weight:300;color:rgba(243,235,223,.5);line-height:1.8;margin-top:28px;max-width:400px" data-reveal="up-1">Environmental protection is not only about conserving forests or reducing waste. It is about safeguarding health, equity, and the future itself. At Good Universe, climate action and gender equity are not separate agendas  they converge.</p>
+    </div>
+    <div class="climate-items" data-reveal>
+      <div class="climate-item"><div class="ci-num">01</div><div><div class="ci-title">Miyawaki Afforestation  Sangareddy</div><div class="ci-desc">Dense, multi-layered native forests planted in partnership with Infosys Foundation. 18,000+ trees growing 10× faster than conventional plantations. Projected 200–300 tonnes CO₂ absorbed over their lifetime. A women's SHG managing a petrol pump now also manages a forest.</div></div></div>
+      <div class="climate-item"><div class="ci-num">02</div><div><div class="ci-title">Sustainable Menstruation</div><div class="ci-desc">480,000 disposable pads prevented from landfills annually through structured education and eco-alternative adoption across program communities. A single shift in awareness created lasting behavioural change and measurable environmental relief.</div></div></div>
+      <div class="climate-item"><div class="ci-num">03</div><div><div class="ci-title">Women-Led Environmental Stewardship</div><div class="ci-desc">Self-Help Groups running solar charging stations, eco-product enterprises, and community restoration models. Before  fewer than 16% associated restoration with women-led leadership. After  over 83% acknowledged it.</div></div></div>
+      <div class="climate-item"><div class="ci-num">04</div><div><div class="ci-title">Climate Literacy & Future Learning</div><div class="ci-desc">STEM access for underserved youth  linking climate literacy, digital skills, and 4th industrial revolution opportunities to India's most excluded communities. The classroom as a climate action hub.</div></div></div>
+      <!-- <div class="climate-item"><div class="ci-num">05</div><div><div class="ci-title">UN SDSN Local Pathway Fellow</div><div class="ci-desc">Advocating intersectional climate-gender-health programming at global forums since 2018  bringing grassroots evidence to the world stage, from village sessions to Davos and beyond.</div></div></div> -->
+    </div>
+  </div>
+</section>
+
+<div class="climate-stats" style="background:var(--forest)">
+  <div class="climate-stats-inner" data-reveal>
+    <div class="cs-item"><span class="cs-num" data-counter="18000" data-suffix="+">0</span><div class="cs-lbl">Trees Planted via Miyawaki Method</div></div>
+    <div class="cs-item"><span class="cs-num">200-300T</span><div class="cs-lbl">CO₂ Absorbed Over Lifetime</div></div>
+    <div class="cs-item"><span class="cs-num">480K</span><div class="cs-lbl">Pads Diverted from Landfills Annually</div></div>
+    <div class="cs-item"><span class="cs-num">83%</span><div class="cs-lbl">Communities Practising Environmental Stewardship</div></div>
+  </div>
+</div>
+
+<section class="education" id="education">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--sky)">Comprehensive School Development</div>
+    <h2 class="edu-title">Schools as<br><em>ecosystems</em></h2>
+    <p class="edu-lead">What transforms a school from a building into a learning ecosystem? It is coherence  leadership, pedagogy, teacher capacity, student engagement, and governance working in alignment. Our school development approach is systemic, not fragmented. Each classroom becomes structured. Each teacher becomes a multiplier.</p>
+  </div>
+  <div class="edu-programs">
+    <div class="edu-prog" data-reveal>
+      <span class="edu-prog-tag">Veltris Tech · School Development</span>
+      <div class="edu-prog-title">STEM, Skills, Menstrual Health & Career Guidance</div>
+      <div class="edu-prog-body">Treating schools not as static spaces but as evolving institutions where infrastructure, aspiration, pedagogy, and opportunity must grow together. This program integrates STEM learning, career guidance, menstrual health education, and school infrastructure improvement  with Veltris employees directly serving as STEM mentors alongside our field teams.</div>
+      <ul class="edu-prog-features">
+        <li>Hands-on STEM kits and activity-based science modules</li>
+        <li>Psychometric assessments and structured career counselling for first-generation learners</li>
+        <li>Sustainable menstrual health education with eco-friendly kit distribution</li>
+        <li>Wishlist infrastructure upgrades: smart boards, libraries, sports equipment, sanitation</li>
+        <li>Teacher training, leadership mentoring, and academic governance support</li>
+      </ul>
+      <div class="edu-stat-row">
+        <div class="edu-stat-item"><div class="edu-stat-num">88%</div><div class="edu-stat-lbl">Improved STEM confidence (from 17%)</div></div>
+        <div class="edu-stat-item"><div class="edu-stat-num">81%</div><div class="edu-stat-lbl">Clarity on career pathways (from 14%)</div></div>
+        <div class="edu-stat-item"><div class="edu-stat-num">84%</div><div class="edu-stat-lbl">Menstrual literacy (from 14.2%)</div></div>
+      </div>
+    </div>
+    <div class="edu-prog" data-reveal="up-1">
+      <span class="edu-prog-tag">NGENUX · 2,000 Students · 3 Schools</span>
+      <div class="edu-prog-title">STEM Mentorship, Arts, Library & Hygiene Infrastructure</div>
+      <div class="edu-prog-body">Investment beyond charity. Investment in capability, imagination, and the architecture of opportunity. NGENUX employees served as active STEM mentors while the program established interactive libraries, creative spaces, hygiene infrastructure, and arts workshops  building schools as whole environments for human flourishing and intellectual curiosity.</div>
+      <ul class="edu-prog-features">
+        <li>Mentor-led STEM workshops with hands-on kits and applied problem-solving exercises</li>
+        <li>100+ curated books in interactive library corners  fostering daily reading habits</li>
+        <li>Storytelling, theatre, journaling, and arts expression workshops</li>
+        <li>Handwash unit installations and comprehensive hygiene infrastructure upgrades</li>
+        <li>Dedicated creative spaces for group work, innovation, and student-led initiatives</li>
+      </ul>
+      <div class="edu-stat-row">
+        <div class="edu-stat-item"><div class="edu-stat-num">77%</div><div class="edu-stat-lbl">STEM confidence (from 13%)</div></div>
+        <div class="edu-stat-item"><div class="edu-stat-num">79%</div><div class="edu-stat-lbl">Weekly readers (from 18%)</div></div>
+        <div class="edu-stat-item"><div class="edu-stat-num">85%</div><div class="edu-stat-lbl">Confident in expression (from 15%)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="healthcare" id="health">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--fern)">Healthcare & Community Development</div>
+    <h2 class="hc-title">Health is the foundation<br>upon which everything <em>else</em> is built.</h2>
+  </div>
+  <p style="font-size:15px;font-weight:300;color:rgba(243,235,223,.45);max-width:600px;line-height:1.8;margin-bottom:56px" data-reveal="up-1">In many communities, healthcare is still reactive rather than preventive. The need, therefore, is not only for treatment facilities but for structured, community-centered health interventions that prioritize awareness, early detection, and preventive care. Strengthening community health is not auxiliary work. It is central to everything we do.</p>
+  <div class="hc-grid">
+    <div class="hc-card" data-reveal>
+      <div class="hc-card-accent"></div>
+      <div class="hc-card-num">PHC+</div>
+      <div class="hc-card-title">Primary Health Centre Strengthening</div>
+      <div class="hc-card-body">Access to dignified, reliable healthcare should not depend on geography. In partnership with District Medical & Health Offices and private donors, Good Universe implemented comprehensive PHC strengthening  improving quality, efficiency, and patient dignity in service delivery.</div>
+      <div class="hc-details">
+        <div class="hc-detail-item">25+ essential medical devices: patient monitors, neonatal care units, diagnostic equipment</div>
+        <div class="hc-detail-item">3 patient wards upgraded  improved sanitation, ventilation, and bed capacity</div>
+        <div class="hc-detail-item">2 examination rooms and 1 diagnostic unit modernized</div>
+        <div class="hc-detail-item">18,000–22,000 residents served within the PHC catchment area</div>
+      </div>
+    </div>
+    <div class="hc-card" data-reveal="up-1">
+      <div class="hc-card-accent"></div>
+      <div class="hc-card-num">300</div>
+      <div class="hc-card-title">Community Health Camp  Gowlidoddi</div>
+      <div class="hc-card-body">June 2025  in collaboration with The George Institute for Global Health and Rotary Club of Sainikpuri  bringing specialist Dental, ENT, and Gynecology services directly to urban informal settlements where barriers routinely delay care.</div>
+      <div class="hc-details">
+        <div class="hc-detail-item">235 beneficiaries  men, women, and children  received direct specialist consultation</div>
+        <div class="hc-detail-item">Multi-specialty services: Dental, ENT, and Gynecological screening</div>
+        <div class="hc-detail-item">On-site prescriptions, referrals, and early detection for untreated conditions</div>
+        <div class="hc-detail-item">Door-to-door mobilization built community trust before camp day</div>
+        <div class="hc-detail-item">Preventive awareness, hygiene education, and reproductive health counselling</div>
+      </div>
+    </div>
+    <div class="hc-card" data-reveal="up-2">
+      <div class="hc-card-accent"></div>
+      <div class="hc-card-num">50/day</div>
+      <div class="hc-card-title">Swayam Day Care Centre for Senior Citizens</div>
+      <div class="hc-card-body">In partnership with the District Welfare Officer, Narayanpet under the Government of Telangana  a structured Multi-Service Day Care Centre for 50 senior citizens daily, with healthcare access, nutritional support, recreational engagement, and social inclusion.</div>
+      <div class="hc-details">
+        <div class="hc-detail-item">50 senior citizens served daily under structured, supervised care</div>
+        <div class="hc-detail-item">Weekly medical check-ups through Health Department convergence</div>
+        <div class="hc-detail-item">Comprehensive facility: healthcare, nutrition, recreation, and digital access</div>
+        <div class="hc-detail-item">Transparent reporting, audit compliance, and government oversight mechanisms</div>
+        <div class="hc-detail-item">Institutionalizing dignity, safety, and community engagement for ageing populations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="employee">
+  <div class="ee-grid">
+    <div class="ee-left" data-reveal>
+      <div class="sec-eyebrow" style="color:var(--gold)">Employee Engagement</div>
+      <h2 class="ee-title">When industry<br>steps into <em>communities</em></h2>
+      <p class="ee-body">Through our employee engagement initiatives, we move social impact beyond a corporate mandate and into lived participation. When employees step out of boardrooms and into classrooms, communities, and public spaces  impact deepens. It becomes personal. It becomes accountable. It becomes shared.<br><br>This year, we collaborated with Novartis, Infosys Foundation, Barry Callebaut, NGENUX, Veltris, and Micron Technology  whose participation transformed interventions from program delivery into collaborative action. Social impact, in this model, is not outsourced. It is experienced.</p>
+      <div class="ee-stat-strip">
+        <div class="ee-stat-row"><div class="ee-stat-num" data-counter="200" data-suffix="+">0</div><div class="ee-stat-lbl">Micron Technology employees engaged across two high-impact days  assembling curriculum-aligned teaching materials for government schools</div></div>
+        <div class="ee-stat-row"><div class="ee-stat-num" data-counter="1600" data-suffix="+">0</div><div class="ee-stat-lbl">Cumulative volunteering hours with 5+ partners generated  depth of engagement, not symbolic presence</div></div>
+        <div class="ee-stat-row"><div class="ee-stat-num">93.3%</div><div class="ee-stat-lbl">Post-engagement satisfaction rate  high alignment between employee expectations and impact delivery</div></div>
+      </div>
+    </div>
+    <div class="ee-programs" data-reveal="up-2">
+      <div class="ee-prog-card">
+        <span class="ee-prog-partner">Micron Technology · True Purpose</span>
+        <div class="ee-prog-name">Industry Excellence Meets Social Commitment</div>
+        <div class="ee-prog-body">A global leader in semiconductor and memory innovation chose to partner with Good Universe under the banner of True Purpose. Over two high-energy days, 300+ employees co-created curriculum-aligned Teaching-Learning Materials for government schools. Not symbolic volunteering  structured, outcome-oriented engagement. Technical excellence translated into educational resources. Corporate energy converted into classroom impact.</div>
+        <div class="ee-prog-highlight"><div class="ee-hl">300+ Employees</div><div class="ee-hl">600+ Volunteer Hours</div><div class="ee-hl">100+ TLMs Created</div><div class="ee-hl">93.3% Satisfaction</div></div>
+      </div>
+      <div class="ee-prog-card">
+        <span class="ee-prog-partner">Barry Callebaut · Community Clean-Up Drive</span>
+        <div class="ee-prog-name">Sustainability Extended Beyond Policy</div>
+        <div class="ee-prog-body">Barry Callebaut  the world's leading manufacturer of high-quality chocolate and cocoa  is globally recognized for responsible sourcing and environmental stewardship. Its partnership with Good Universe reflects a shared belief that sustainability must extend beyond policy into community practice. Employees joined community clean-up drives, working alongside local stakeholders to restore public spaces and model collective environmental responsibility.</div>
+        <div class="ee-prog-highlight"><div class="ee-hl">Community Clean-Up</div><div class="ee-hl">Environmental Awareness</div><div class="ee-hl">Collective Stewardship</div></div>
+      </div>
+      <div class="ee-prog-card">
+        <span class="ee-prog-partner">Novartis · NGENUX · Infosys Foundation · Veltris</span>
+        <div class="ee-prog-name">A Multiplier Model for Corporate-Community Impact</div>
+        <div class="ee-prog-body">Employees from diverse sectors engaged across STEM mentorship sessions, sustainable menstrual health education, and community development  sharing career journeys, demystifying pathways into science and technology, and demonstrating that empathy-driven leadership begins with showing up. Employee engagement creates a multiplier effect, strengthening corporate-community relationships while building empathy-driven leadership within organizations.</div>
+        <div class="ee-prog-highlight"><div class="ee-hl">STEM Mentorship</div><div class="ee-hl">Menstrual Health Education</div><div class="ee-hl">Career Guidance</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--gold)">Field Gallery · 2025–26</div>
+    <h2 class="gallery-title">The world we work <em>within</em></h2>
+    <p class="gallery-subtitle">Photographs from our field work across communities, schools, health camps, plantations, and skilling programs.</p>
+  </div>
+  <div class="masonry" data-reveal>
+    <div class="masonry-item"><div class="masonry-ph mi-h3" style="background:url('./images/circleoggirls.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">Adolescent Health Session · Nalgonda</div></div><div class="masonry-caption"><div class="mc-tag">Adolescent Wellbeing · SBI Foundation</div><div class="mc-title">A circle of girls learning what no one taught their mothers</div><div class="mc-loc">Nalgonda District · Telangana · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h2" style="background:url('./images/1200saplings.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">Miyawaki Plantation · Sangareddy</div></div><div class="masonry-caption"><div class="mc-tag">Climate Action · Infosys Foundation</div><div class="mc-title">1,200 saplings. A community's forest.</div><div class="mc-loc">Sangareddy · Telangana · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h4" style="background:url('./images/stemeducation.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">STEM Workshop · VELTRIS</div></div><div class="masonry-caption"><div class="mc-tag">STEM Education · VELTRIS</div><div class="mc-title">Hands that hold instruments, not excuses</div><div class="mc-loc">Government School · Hyderabad · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h1" style="background:url('./images/Youthlivelihood.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">Skill Development Graduation · Hyderabad</div></div><div class="masonry-caption"><div class="mc-tag">Youth Livelihoods · BE Skill Centre</div><div class="mc-title">663 youth. 84.2% placed. Each one a multiplier.</div><div class="mc-loc">Hyderabad · Telangana · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h5" style="background:url('./images/235people.jpg') center center/cover no-repeat"><div class="masonry-ph-text">Community Health Camp · Gowlidoddi</div></div><div class="masonry-caption"><div class="mc-tag">Community Health · George Institute</div><div class="mc-title">235 people who now know their diagnosis</div><div class="mc-loc">Gowlidoddi · Hyderabad · June 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h2" style="background:url('./images/petrol.jpg') center center/cover no-repeat"><div class="masonry-ph-text">Women SHG Leader · Rural Community</div></div><div class="masonry-caption"><div class="mc-tag">Women's Empowerment</div><div class="mc-title">She leads a petrol pump. She leads a forest.</div><div class="mc-loc">Sangareddy · Telangana · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h3" style="background:url('./images/employeeengagement.jpg') center center/cover no-repeat"><div class="masonry-ph-text">Micron TruePurpose Volunteer Day</div></div><div class="masonry-caption"><div class="mc-tag">Employee Engagement · Micron Technology</div><div class="mc-title">200 engineers building the tools a child needs</div><div class="mc-loc">Hyderabad · Telangana · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h4" style="background:url('./images/firstcoonversation.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">Mental Health Session · AWP</div></div><div class="masonry-caption"><div class="mc-tag">Mental Health · Adolescent Wellbeing</div><div class="mc-title">The first conversation about feelings, in a classroom</div><div class="mc-loc">Nalgonda District · 2025</div></div></div>
+    <div class="masonry-item"><div class="masonry-ph mi-h2" style="background:url('./images/100books.jpeg') center center/cover no-repeat"><div class="masonry-ph-text">Library Corner · NGENUX School</div></div><div class="masonry-caption"><div class="mc-tag">Education · NGENUX Partnership</div><div class="mc-title">100 books in a school that had none</div><div class="mc-loc">Government School · Hyderabad · 2025</div></div></div>
+  </div>
+</section>
+
+<section class="geo-reach" id="geography">
+  <div class="geo-grid">
+    <div data-reveal>
+      <div class="sec-eyebrow" style="color:var(--gold)">Geographic Reach</div>
+      <h2 class="geo-title">Rooted<br>across <em>India</em></h2>
+      <p class="geo-desc">Good Universe works across multiple states, embedding itself in the communities it serves  not as an external program, but as a trusted, consistent presence. Village by village. School by school. The reach continues to grow.</p>
+      <div class="geo-states">
+        <div class="geo-state"><div class="gs-name">Telangana</div><div class="gs-programs"><div class="gs-prog-tag">AWP</div><div class="gs-prog-tag">Climate</div><div class="gs-prog-tag">Health</div><div class="gs-prog-tag">Skilling</div><div class="gs-prog-tag">Education</div></div></div>
+        <div class="geo-state"><div class="gs-name">Andhra Pradesh</div><div class="gs-programs"><div class="gs-prog-tag">Education</div><div class="gs-prog-tag">SRHR</div></div></div>
+        <div class="geo-state"><div class="gs-name">Odisha</div><div class="gs-programs"><div class="gs-prog-tag">Community</div><div class="gs-prog-tag">Wellbeing</div></div></div>
+        <div class="geo-state"><div class="gs-name">Maharashtra</div><div class="gs-programs"><div class="gs-prog-tag">Menstrual Health</div><div class="gs-prog-tag">Skilling</div></div></div>
+        <div class="geo-state"><div class="gs-name">Karnataka</div><div class="gs-programs"><div class="gs-prog-tag">Education</div><div class="gs-prog-tag">Climate</div></div></div>
+      </div>
+      <div style="margin-top:40px;padding:28px 32px;background:rgba(200,160,82,.06);border-left:2px solid var(--gold)">
+        <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">10 Years of Grassroots Presence</div>
+        <div style="font-size:15px;font-weight:300;color:rgba(243,235,223,.6);line-height:1.75">Trust is not built in a single project cycle. It is earned through years of showing up  in the same communities, with the same consistency, with ever-deepening impact.</div>
+      </div>
+    </div>
+    <div data-reveal="up-2">
+      <svg viewBox="0 0 400 500" class="india-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs><filter id="glow2"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <path class="india-state" d="M170,28 L215,22 L255,38 L285,58 L308,88 L318,118 L298,148 L275,168 L255,158 L238,178 L248,198 L268,218 L278,248 L258,278 L238,298 L218,308 L198,328 L188,318 L178,338 L168,358 L158,378 L153,398 L163,418 L173,438 L180,458 L173,468 L163,453 L150,438 L140,418 L128,395 L112,365 L98,335 L88,305 L75,275 L65,245 L62,215 L68,185 L78,165 L88,148 L83,118 L88,88 L98,68 L118,48 L145,33 Z"/>
+        <path class="india-state active" d="M172,278 L192,263 L212,268 L222,288 L218,308 L198,322 L182,313 L172,295 Z"/>
+        <path class="india-state active-2" d="M152,312 L172,295 L182,313 L198,322 L193,342 L173,352 L153,337 L146,322 Z"/>
+        <path class="india-state active-2" d="M128,338 L153,337 L173,352 L163,372 L143,377 L118,362 L113,342 Z"/>
+        <path class="india-state active" d="M98,218 L138,208 L172,218 L172,248 L152,263 L128,258 L103,248 L93,232 Z"/>
+        <path class="india-state active" d="M232,198 L262,193 L278,213 L268,233 L248,238 L228,228 L223,213 Z"/>
+        <circle cx="197" cy="296" r="5" fill="var(--gold)" filter="url(#glow2)" opacity=".9"><animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/></circle>
+        <circle cx="175" cy="328" r="3.5" fill="var(--fern)" filter="url(#glow2)" opacity=".8"><animate attributeName="r" values="3.5;5.5;3.5" dur="2.5s" repeatCount="indefinite"/></circle>
+        <circle cx="145" cy="352" r="3.5" fill="var(--fern)" filter="url(#glow2)" opacity=".8"><animate attributeName="r" values="3.5;5.5;3.5" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="135" cy="232" r="3.5" fill="var(--gold)" filter="url(#glow2)" opacity=".8"><animate attributeName="r" values="3.5;5.5;3.5" dur="2.2s" repeatCount="indefinite"/></circle>
+        <circle cx="250" cy="216" r="3.5" fill="var(--gold)" filter="url(#glow2)" opacity=".8"><animate attributeName="r" values="3.5;5.5;3.5" dur="1.8s" repeatCount="indefinite"/></circle>
+        <text x="197" y="314" text-anchor="middle" font-size="8.5" fill="rgba(200,160,82,.85)" font-family="Jost,sans-serif">Telangana</text>
+        <text x="170" y="346" text-anchor="middle" font-size="7.5" fill="rgba(90,148,104,.75)" font-family="Jost,sans-serif">A.P.</text>
+        <text x="142" y="368" text-anchor="middle" font-size="7.5" fill="rgba(90,148,104,.75)" font-family="Jost,sans-serif">Karnataka</text>
+        <text x="135" y="250" text-anchor="middle" font-size="7.5" fill="rgba(200,160,82,.7)" font-family="Jost,sans-serif">Maharashtra</text>
+        <text x="252" y="232" text-anchor="middle" font-size="7.5" fill="rgba(200,160,82,.7)" font-family="Jost,sans-serif">Odisha</text>
+      </svg>
+      <div style="margin-top:20px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:rgba(243,235,223,.4)"><div style="width:10px;height:10px;border-radius:50%;background:var(--gold)"></div>Primary Presence</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:rgba(243,235,223,.4)"><div style="width:10px;height:10px;border-radius:50%;background:var(--fern)"></div>Active programs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finance" id="finance">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--terra)">Financial Transparency</div>
+    <h2 class="fin-title">Accountable to the<br><em>communities we serve</em></h2>
+    <p class="fin-desc">Trust is built on transparency. Every rupee invested in Good Universe is tracked, reported, and directed toward measurable impact. We are Section 8, 12A, 80G and CSR-1  with full government and audit compliance across all programs.</p>
+  </div>
+  <div class="fin-grid">
+    <div class="fin-card" data-reveal>
+      <div class="fin-card-title">program Investment  Where Funds Flow</div>
+      <div class="fin-bar-list">
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Adolescent Wellbeing & Health</span><span class="fin-bar-pct">38%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:38%;background:var(--terra)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Education & School Development</span><span class="fin-bar-pct">24%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:24%;background:var(--sky)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Climate & Environment</span><span class="fin-bar-pct">16%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:16%;background:var(--fern)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Healthcare & Community</span><span class="fin-bar-pct">14%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:14%;background:var(--gold)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Youth Skilling & Livelihoods</span><span class="fin-bar-pct">8%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:8%;background:#A08CC8"></div></div></div>
+      </div>
+    </div>
+    <div class="fin-card" data-reveal="up-1">
+      <div class="fin-card-title">Operational Efficiency</div>
+      <div class="fin-bar-list">
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Direct program Delivery</span><span class="fin-bar-pct">82%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:82%;background:var(--sage)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Field Staff & Operations</span><span class="fin-bar-pct">11%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:11%;background:var(--gold)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">M&E, Research & Reporting</span><span class="fin-bar-pct">4%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:4%;background:var(--terra)"></div></div></div>
+        <div class="fin-bar-item"><div class="fin-bar-label"><span class="fin-bar-name">Administration & Overheads</span><span class="fin-bar-pct">3%</span></div><div class="fin-bar-track"><div class="fin-bar-fill" style="--pct:3%;background:var(--ash)"></div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="fin-compliance" data-reveal>
+    <div class="fin-comp-item"><div class="fin-comp-badge">Section 8</div><div class="fin-comp-label">Non-Profit Registration</div></div>
+    <div class="fin-comp-item"><div class="fin-comp-badge">12A · 80G</div><div class="fin-comp-label">Tax Exemption Certified</div></div>
+    <div class="fin-comp-item"><div class="fin-comp-badge">CSR-1</div><div class="fin-comp-label">Eligible for CSR Funding</div></div>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="partners-head">
+    <div data-reveal><div class="sec-eyebrow" style="color:var(--terra)">Partners & Collaborators</div><h2 class="partners-title">The institutions<br>that trust our work</h2></div>
+    <p class="partners-subtitle" data-reveal="up-2">80+ corporations and foundations co-investing in systemic change. Built on evidence, accountability, and shared purpose  not charity alone.</p>
+  </div>
+<div class="partners-grid">
+
+  <div class="partner-item" data-reveal>
+    <div class="partner-logo">
+      <img src="./logos/sbi_foundation.png" alt="SBI Foundation">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">SBI Foundation</div>
+      <div class="partner-type">CSR · Healthcare · Education · AWP Nalgonda</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-1">
+    <div class="partner-logo">
+      <img src="./logos/infosysfoundation-removebg-preview.png" alt="Infosys Foundation">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Infosys Foundation</div>
+      <div class="partner-type">CSR · STEM · Miyawaki Plantation · Community</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-2">
+    <div class="partner-logo">
+      <img src="./logos/novartis_logo-removebg-preview (1).png" alt="Novartis">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Novartis</div>
+      <div class="partner-type">CSR · Health programs · Employee Engagement</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-3">
+    <div class="partner-logo">
+      <img src="./logos/Micron-Logo-removebg-preview.png" alt="Micron Technology">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Micron Technology</div>
+      <div class="partner-type">Employee Engagement · True Purpose · TLMs</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal>
+    <div class="partner-logo">
+      <img src="./logos/Natco_Pharma_Logo.svg.png" alt="NATCO Pharma">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">NATCO Pharma</div>
+      <div class="partner-type">CSR · Adolescent Wellbeing · 1,000 Girls</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-1">
+    <div class="partner-logo">
+      <img src="./logos/Barry_Callebaut_logo.svg.png" alt="Barry Callebaut">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Barry Callebaut</div>
+      <div class="partner-type">Employee Engagement · Environment · Clean-Up</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-2">
+    <div class="partner-logo">
+      <img src="./logos/ngenux-removebg-preview.png" alt="NGENUX">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">NGENUX</div>
+      <div class="partner-type">STEM · School Development · 2,000 Students</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-3">
+    <div class="partner-logo">
+      <img src="./logos/veltris.png" alt="Veltris Tech">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Veltris Tech</div>
+      <div class="partner-type">School Development · STEM · Career Guidance</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal>
+    <div class="partner-logo">
+      <img src="./logos/centific.png" alt="Centific Global">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Centific Global</div>
+      <div class="partner-type">CSR · AWP · 1,000 Girls · 4 Schools</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-1">
+    <div class="partner-logo">
+      <img src="./logos/pandrol_rahee-removebg-preview.png" alt="Pandrol-Rahee">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">Pandrol-Rahee</div>
+      <div class="partner-type">CSR · Adolescent Wellbeing</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-2">
+    <div class="partner-logo">
+      <img src="./logos/dp_world.png" alt="DP World">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">DP World</div>
+      <div class="partner-type">CSR · Skill Development · Livelihoods</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+  <div class="partner-item" data-reveal="up-3">
+    <div class="partner-logo">
+      <img src="./logos/george_institute.png" alt="George Institute Rotary">
+    </div>
+    <div class="partner-content">
+      <div class="partner-name">George Institute · Rotary</div>
+      <div class="partner-type">Health Camps · Community Health · Research</div>
+    </div>
+    <div class="partner-arr">↗</div>
+  </div>
+
+</div>
+<div class="media-section" data-reveal>
+  <div class="media-label">Featured In</div>
+
+  <div class="media-row">
+    <div class="media-item">
+      <img src="./logos/bbc_logo (1).png" alt="BBC">
+    </div>
+    <div class="media-item">
+      <img src="./logos/toi_logo-removebg-preview.png" alt="Times of India">
+    </div>
+    <div class="media-item">
+      <img src="./logos/the_hindu_logo-removebg-preview.png" alt="The Hindu">
+    </div>
+    <div class="media-item">
+      <img src="./logos/the_better_india_logo-removebg-preview.png" alt="The Better India">
+    </div>
+    <div class="media-item">
+      <img src="./logos/deccan_chronicle_logo-removebg-preview.png" alt="Deccan Chronicle">
+    </div>
+    <div class="media-item">
+      <img src="./logos/india_ahead.png" alt="India Ahead">
+    </div>
+    <div class="media-item">
+      <img src="./logos/fever_fm_logo-removebg-preview.png" alt="Fever FM">
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="future" id="future">
+  <div data-reveal>
+    <div class="sec-eyebrow" style="color:var(--fern)">Looking Forward</div>
+    <h2 class="future-title">The future<br>we are <em>building</em></h2>
+    <p class="future-sub">Progress is already in motion. The question is no longer whether change is possible  it is how far and how fast we can take it together.</p>
+  </div>
+  <div class="future-cards" data-reveal="up-1">
+    <div class="future-card"><div class="fc-icon"></div><span class="fc-year">Adolescent Health · Scale</span><div class="fc-title">20,000 Girls by 2027</div><div class="fc-body">Expanding the Adolescent Wellbeing program to reach 20,000+ girls annually across Telangana, Andhra Pradesh, and Odisha  deepening program quality while significantly expanding geographic reach into underserved districts.</div><div class="fc-target">Target: <strong>10 districts · 5 states · 110+ schools</strong></div></div>
+    <div class="future-card"><div class="fc-icon"></div><span class="fc-year">Climate · Systems</span><div class="fc-title">1 Lakh Trees by 2028</div><div class="fc-body">Scaling the Miyawaki afforestation model to 1,00,000 trees across urban and peri-urban India  in partnership with corporations, local governments, and women-led SHGs who become stewards of the land they plant.</div><div class="fc-target">Target: <strong>100,000 trees · 500 tonnes CO₂/year</strong></div></div>
+    <div class="future-card"><div class="fc-icon"></div><span class="fc-year">Education · Systems Change</span><div class="fc-title">300 Schools Transformed</div><div class="fc-body">From 30+ to 100+ schools  building a replicable model of comprehensive school development that strengthens STEM, menstrual health, career guidance, and infrastructure in one integrated system. Each school a multiplier, each teacher a force for change.</div><div class="fc-target">Target: <strong>100 schools · 5 states · 50,000 students</strong></div></div>
+  </div>
+  <div style="margin-top:60px;padding:48px;background:rgba(0,0,0,.3);border:1px solid rgba(90,148,104,.15);position:relative;z-index:1" data-reveal>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,38px);font-weight:300;font-style:italic;color:var(--white);line-height:1.4;max-width:700px">Our mission is not only to address immediate gaps, but to contribute to a future where communities are informed, confident, and equipped to lead their own change.</div>
+    <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);margin-top:20px"> Good Universe Mission Statement</div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="founder-grid">
+    <div class="founder-visual"><div class="founder-ph">          <img
+            src="https://static.wixstatic.com/media/dfd6c6_b5547a6f072a486eb783d48ff3807f17~mv2.jpg/v1/crop/x_63,y_0,w_3546,h_4880/fill/w_504,h_693,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Edit%201.jpg"
+            alt="Kamal Nayak"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          ><div class="founder-ph-text"> </div></div><div class="founder-gradient"></div><div class="founder-title-overlay">Kamal</div></div>
+    <div class="founder-content">
+      <div><div class="sec-eyebrow" style="color:var(--gold)">Founder's Story</div></div>
+      <div class="founder-name" data-reveal>Kamal Nayak</div>
+      <div class="founder-role" data-reveal="up-1">Founder & CEO · Good Universe</div>
+      <div class="founder-quote" data-reveal="up-2">My father earned ₹1,800 a month. He guarded other people's homes. I guard futures.</div>
+      <p class="founder-text" data-reveal="up-3">Born in a village in Odisha, Kamal moved to Bangalore at 19 with nothing  and failed an English interview at KFC. The moment that changed everything was watching a child eat off garbage outside a restaurant he was cleaning. He quit stable corporate job and founded Good Universe in 2015 with a simple belief: access to dignity should not be determined by geography.<br><br>Ten years later, that belief has touched over a million lives across India  through schools, communities, health camps, forests, and skilling centres built on the conviction that change begins with people.</p>
+      <div class="founder-creds" data-reveal>
+        <div class="founder-cred-item">UN Sustainable Development Solutions Network Fellow</div>
+        <div class="founder-cred-item">World Economic Forum Global Shaper </div>
+        <div class="founder-cred-item">World Bank Youth Champion</div>
+        <div class="founder-cred-item">TEDx Speaker · APJ Abdul Kalam Excellence Award</div>
+        <div class="founder-cred-item">Telangana Leadership Award 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="founder-grid">
+    <div class="founder-visual"><div class="founder-ph">          
+      <img
+            src="./images/Neloufer.jpg"
+            alt="Neloufer"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          ><div class="founder-ph-text"> </div></div><div class="founder-gradient"></div><div class="founder-title-overlay">Neloufer</div></div>
+    <div class="founder-content">
+      <div><div class="sec-eyebrow" style="color:var(--gold)">Founder's Story</div></div>
+      <div class="founder-name" data-reveal>Neloufer Tabassum</div>
+      <div class="founder-role" data-reveal="up-1">Founder & CEO · Good Universe</div>
+      <div class="founder-quote" data-reveal="up-2">I have always believed that to see change, you have to embody it. I do what I do to with the hope that it inspires a girl somewhere to fight for her dreams</div>
+      <p class="founder-text" data-reveal="up-3">Born and raised in Nalgonda, Telangana, Neloufer Tabassum’s journey into social impact began with a simple but powerful question: why should a girl’s future be limited by the circumstances she is born into? Over the last decade, she has worked at the intersection of education, health, gender equity, and community development, designing programs that place dignity, opportunity, and choice at the centre of change.<br><br>As Co-Founder of Good Universe, Neloufer has helped build initiatives that have reached over a million people across India, from menstrual health and women’s empowerment programmes to skilling centres, climate action projects, and education interventions in underserved communities. Her work is rooted in the belief that lasting impact comes not from charity, but from creating systems that enable people to thrive.</p>
+      <div class="founder-creds" data-reveal>
+        <div class="founder-cred-item">Social Science Researcher and Champion</div>
+        <div class="founder-cred-item">Women in Social Impact Leader</div>
+        <div class="founder-cred-item">Advocate for Menstrual Health, Gender Equity & Community Development</div>
+        <div class="founder-cred-item">Recipient of multiple state and national scholarships</div>
+        <div class="founder-cred-item">Leading programmes impacting 1,000,000+ lives across India</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="sec-eyebrow cta-eyebrow" style="justify-content:center" data-reveal>Get Involved</div>
+  <h2 class="cta-title" data-reveal="up-1">Impact begins<br>when <em>empathy</em><br>becomes action</h2>
+  <p class="cta-sub" data-reveal="up-2">Whether you are a corporation seeking meaningful CSR, an individual with a cause, a youth with a vision, or an institution ready to co-create  there is a door here for you.</p>
+  <div class="cta-buttons" data-reveal="up-3">
+    <a href="mailto:kamal@gooduniverse.org" class="btn-primary">Partner With Us</a>
+    <button class="btn-outline" onclick="scrollTo2('awp')">Support a program</button>
+    <button class="btn-outline" style="border-color:rgba(243,235,223,.15)">Visit the Field</button>
+  </div>
+  <div class="cta-divider"></div>
+  <div class="cta-deco" aria-hidden="true">universe</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div><div class="footer-logo-text">Good Universe</div><p class="footer-tagline">Building communities. Changing lives. Working at the intersection of climate, gender, health, and skill development since 2015.</p></div>
+    <div><div class="footer-col-title">Our Work</div><div class="footer-links"><a class="footer-link" href="#">Adolescent Wellbeing</a><a class="footer-link" href="#">Women's Health</a><a class="footer-link" href="#">Climate Action</a><a class="footer-link" href="#">STEM Education</a><a class="footer-link" href="#">Youth Livelihoods</a><a class="footer-link" href="#">Community Health</a></div></div>
+    <div><div class="footer-col-title">Organisation</div><div class="footer-links"><a class="footer-link" href="#">About Us</a><a class="footer-link" href="#">Impact Report 2025–26</a><a class="footer-link" href="#">Partnerships</a><a class="footer-link" href="#">Impact Stories</a><a class="footer-link" href="#">CSR Compliance</a><a class="footer-link" href="#">Gallery</a></div></div>
+    <div><div class="footer-col-title">Contact</div><div class="footer-links"><a class="footer-link" href="mailto:kamal@gooduniverse.org">kamal@gooduniverse.org</a><a class="footer-link" href="tel:+918341180851">+91 83411 80851</a><a class="footer-link" href="#">Hyderabad, Telangana</a><a class="footer-link" href="#">gooduniverse.org</a></div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">© 2025–26 Good Universe. Section 8 · 12A · 80G · CSR-1 · Est. 2015</div>
+    <div class="footer-social"><a class="footer-soc" href="#">Twitter</a><a class="footer-soc" href="#">Instagram</a><a class="footer-soc" href="#">LinkedIn</a></div>
+  </div>
+</footer>
+
+<script>
+function scrollTo2(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
+window.addEventListener('load',()=>{document.body.classList.add('loaded')});
+const dot=document.getElementById('curDot'),ring=document.getElementById('curRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
+(function ringAnim(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ringAnim)})();
+document.querySelectorAll('a,button,.theme-card,.partner-item,.story-side-item,.awp-prog-card,.hc-card,.hs-card,.masonry-item,.ee-prog-card,.future-card,.founder-card,.yn-stat,.mission-pillar').forEach(el=>{el.addEventListener('mouseenter',()=>ring.classList.add('hover'));el.addEventListener('mouseleave',()=>ring.classList.remove('hover'))});
+window.addEventListener('scroll',()=>{const pct=(window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100;document.getElementById('progress').style.width=pct+'%';document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+const startedCounters=new Set();
+function startCounter(el){if(startedCounters.has(el))return;startedCounters.add(el);const target=parseInt(el.dataset.counter),suffix=el.dataset.suffix||'',dur=target>100000?2400:target>10000?2000:target>1000?1800:1400,start=performance.now();
+const update=now=>{const t=Math.min((now-start)/dur,1),eased=1-Math.pow(1-t,3),val=Math.floor(eased*target);
+if(target>=1000000)el.textContent=(val/1000000).toFixed(1)+'M'+suffix;
+else if(target>=1000)el.textContent=val.toLocaleString()+suffix;
+else el.textContent=val+suffix;
+if(t<1)requestAnimationFrame(update);
+else{if(target>=1000000)el.textContent='1M'+suffix;else el.textContent=target.toLocaleString()+suffix}};
+requestAnimationFrame(update)}
+const obs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');entry.target.querySelectorAll('[data-counter]').forEach(startCounter);if(entry.target.hasAttribute('data-counter'))startCounter(entry.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('[data-reveal],[data-counter],.yn-stat,.impact-stat,.fin-bar-fill,.future-card,.hc-card,.hs-card,.awp-pillar,.ee-stat-row,.fin-comp-item').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{const sy=window.scrollY,atmo=document.querySelector('.hero-atmosphere');if(atmo)atmo.style.transform=`translateY(${sy*.28}px)`},{passive:true});
+</script>
+</body>
+</html>
